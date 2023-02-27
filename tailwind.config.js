@@ -1,13 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html'],
+  content: ['index.html'],
   theme: {
+    container: {
+      center: true,
+      padding: '16px',
+    },
     extend: {
-      fontFamily: {
-        noto: ['Noto Sans'],
-      },
       colors: {
-        maroon: '#B0233C',
+        primary: '#B0233C',
+        secondary: '#64748b',
+        dark: '#0F172A',
+      },
+      screens: {
+        '2xl': '1320px',
       },
     },
   },

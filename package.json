@@ -1,14 +1,21 @@
 {
   "name": "tailwind-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tailwind Portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aautoruns/galihazellaa.git"
+  },
+  "author": "galihazellaa",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aautoruns/galihazellaa/issues"
+  },
+  "homepage": "https://github.com/aautoruns/galihazellaa#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.7"
   }

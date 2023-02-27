@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-80;
+}
+
+.hamburger-line {
+  @apply w-[23.5px] h-[2px] my-1.5 block bg-dark;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}

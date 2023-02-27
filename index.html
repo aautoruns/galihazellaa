@@ -1,202 +1,302 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
 <head>
+    <!-- Web Identity -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fonts -->
+    <title>Galih Azella Firdaus - Portfolio</title>
+    <link rel="shortcut icon" href="dist/img/favicon.webp" type="image/x-icon">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="assets/img/logo-circle.png" type="image/x-icon">
-    <title>Galih Azella Firdaus</title>
+
+    <!-- Vendor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
+        integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Tailwind CSS -->
-    <link href="/dist/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/css/style.css" rel="stylesheet">
+
 </head>
 
-<body class="font-noto dark:bg-gray-900">
-    <!-- Navbar -->
-    <nav class="bg-transparent border-gray-200 mb-5 sm:px-4 rounded-b-xl p-5 dark:text-white">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="#" class="flex items-center">
-                <img src="assets/img/memoji.png" class="h-6 sm:h-9" alt="Flowbite Logo" />
-                <h1 class="self-center font-semibold whitespace-nowrap">Welcome to my
-                    <span
-                        class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-700 relative inline-block">
-                        <span class="relative text-white"> Portfolio</span>
-                    </span>
-                </h1>
-            </a>
-            <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="flex flex-col p-4 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-gray-900">
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 bg-slate-600 rounded md:bg-transparent md:text-white-600 md:p-0 dark:text-white"
-                            aria-current="page">🏠 Home</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">🙋
-                            About</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">✨
-                            Mini Resumes</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">📌
-                            Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">🆘
-                            Need a Help?</a>
-                    </li>
-                </ul>
+<body>
+    <!-- Header -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-5">
+                    <a href="/" class="block py-6 capitalize" id="greetings"></a>
+                </div>
+                <div class="flex items-center px-5">
+
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="absolute right-4 top-full hidden w-full max-w-[210px] bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 border border-gray-100 lg:border-0 py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none sm:backdrop:blur-lg lg:shadow-none">
+                        <ul class="block top lg:flex">
+                            <li>
+                                <a href="#home" class="block py-2 px-5 hover:font-bold">🏡
+                                    Home</a>
+                            </li>
+                            <li>
+                                <a href="#tentang" class="block py-2 px-5 hover:font-bold">🙋
+                                    Tentang</a>
+                            </li>
+                            <li>
+                                <a href="#resume" class="block py-2 px-5 hover:font-bold">✨
+                                    Mini Resume</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="block py-2 px-5 hover:font-bold">📌
+                                    Portofolio</a>
+                            </li>
+                            <li>
+                                <a href="#kontak" class="block py-2 px-5 hover:font-bold">🆘
+                                    Butuh bantuan?</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
     <!-- End Navbar -->
 
-    <!-- Carousel -->
-    <div class="container px-9 mx-auto mb-96">
-        <div id="indicators-carousel" class="relative rounded-lg" data-carousel="static">
-            <h1 class="mt-7 font-semibold dark:text-white">Im, Galih Azella Firdaus</h1>
-            <!-- Carousel wrapper -->
-            <div class="container mt-3 sm:flex sm:flex-wrap sm:gap-6">
-                <div id="indicators-carousel" class="border border-red-700 relative lg:w-3/4 sm:h-full"
-                    data-carousel="static">
-                    <!-- Carousel wrapper -->
-                    <div class="relative h-64 rounded-lg overflow-hidden md:h-96 mb-5">
-                        <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="https://source.unsplash.com/1280x720?white"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="carousel-item">
-                        </div>
-                        <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://source.unsplash.com/1280x720?white"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="carousel-item">
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://source.unsplash.com/1280x720?white"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="carousel-item">
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://source.unsplash.com/1280x720?white"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="carousel-item">
-                        </div>
-                        <!-- Item 5 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="https://source.unsplash.com/1280x720?white"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="carousel-item">
-                        </div>
-                    </div>
-                    <!-- Carousel indicators -->
-                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 mb-8">
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                            data-carousel-slide-to="0"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                            data-carousel-slide-to="1"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                            data-carousel-slide-to="2"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                            data-carousel-slide-to="3"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                            data-carousel-slide-to="4"></button>
-                    </div>
-                    <!-- Carousel controls -->
-                    <button type="button"
-                        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-prev>
-                        <span
-                            class="inline-flex items-center justify-center w-8 h-8 rounded-lg sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 19l-7-7 7-7">
-                                </path>
-                            </svg>
-                            <span class="sr-only">Previous</span>
-                        </span>
-                    </button>
-                    <button type="button"
-                        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-next>
-                        <span
-                            class="inline-flex items-center justify-center w-8 h-8 rounded-lg sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                                </path>
-                            </svg>
-                            <span class="sr-only">Next</span>
-                        </span>
-                    </button>
+    <!-- Hero Section -->
+    <section id="home" class="pt-48 lg:pt-56">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-bold text-primary mt-1 md:text-xl"> Halo sobat👋 saya<span
+                            class="block text-dark text-3xl mb-2 lg:text-5xl">Galih
+                            Azella
+                            Firdaus</span></h1>
+                    <h2 class="lg:text-lg">Saya seorang <span class="text-secondary font-semibold" id="typed"></span>
+                    </h2>
+                    <p class="text-dark mb-8 lg:text-lg">Selamat datang di <span class="font-bold">"Portofolio
+                            Website"</span> saya
+                        ✨</p>
+
+                    <a href="#"
+                        class="text-base font-semibold text-white bg-primary py-3 px-5 rounded-lg hover:shadow-lg hover:bg-red-600 transition duration-300 ease-in-out">Butuh
+                        bantuan? 🆘</a>
                 </div>
-                <div class="rounded-md shadow-lg overflow-hidden mb-5 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-                    <img src="https://source.unsplash.com/400x300?white" alt="Image Caption"
-                        class="rounded-lg w-full" />
-                    <div class="flex">
-                        <img src="https://source.unsplash.com/190x190?white" alt="Image Caption"
-                            class="rounded-lg mx-auto mt-8 lg:mx-4" />
-                        <img src="https://source.unsplash.com/190x190?white" alt="Image Caption"
-                            class="rounded-lg mx-auto mt-8 lg:mx-4" />
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:right-0 lg:mt-9">
+                        <img src="dist/img/hero.webp" class="max-w-full mx-auto" alt="me">
+                        <span class="absolute bottom-0 -z-10 -top-5 lg:top-10 left-1/2 -translate-x-1/2 md:scale-125">
+                            <svg width="350" height="350" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#B0233C"
+                                    d="M27.3,-47.8C33.3,-43.7,34.8,-32.3,43.1,-23.2C51.3,-14,66.3,-7,69.7,2C73.2,11,65.1,22,57.2,31.6C49.2,41.3,41.4,49.7,31.8,52.1C22.3,54.5,11.2,51.1,0.9,49.6C-9.4,48.1,-18.9,48.5,-31.7,48C-44.5,47.5,-60.8,46,-70.5,37.8C-80.3,29.6,-83.6,14.8,-79.6,2.3C-75.6,-10.2,-64.3,-20.4,-54.6,-28.7C-45,-37,-36.9,-43.5,-28,-45.9C-19.2,-48.4,-9.6,-47,0.5,-47.9C10.6,-48.7,21.2,-51.9,27.3,-47.8Z"
+                                    transform="translate(100 100) scale(1.2)" />
+                            </svg>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- End Hero Section -->
 
-        <div id="indicators-carousel" class="relative rounded-lg" data-carousel="static">
-            <h1 class="mt-7 font-semibold dark:text-white">Lastest project</h1>
-            <!-- Carousel wrapper -->
-            <div class="container mt-3 sm:flex sm:flex-wrap sm:gap-6">
-                <div class="rounded-md shadow-lg overflow-hidden mb-5">
-                    <img src="https://source.unsplash.com/475x400?cinema" alt="Image Caption" class="w-full" />
+    <!-- About Section -->
+    <section id="tentang" class="pt-64 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <!-- Biodata -->
+                <div class="w-full px-5 mb-10 lg:w-1/3">
+                    <h4 class="font-bold uppercase text-primary text-xl mb-3 lg:text-3xl">Tentang saya</h4>
+                    <h3 class="font-bold mb-3 max-w-md lg:text-2xl">Biodata singkat 🙋‍♂️</h3>
+                    <div class="font-bold text-dark mb-3 max-w-md">
+                        <ul>
+                            <li>Nama lengkap : <span class="font-medium">Galih Azella Firdaus</span></li>
+                            <li>Pendidikan : <span class="font-medium">S1 Teknik Informatika</span></li>
+                            <li>IPK terakhir : <span class="font-medium">3,91</span></li>
+                            <li>Email : <span class="font-medium"><a
+                                        href="#kontak">galihazellafirdaus@gmail.com</a></span></li>
+                        </ul>
+                    </div>
+                    <p class="font-medium text-base text-secondary text-justify max-w-xl lg:text-lg">Saya suka hal
+                        kreatif, seperti menggambar, mengedit foto/video, mendesain UI-UX web maupun
+                        mobile, dll. Sekarang saya sedang mengembangkan diri sebagai junior frontend developer.</p>
                 </div>
-                <div class="rounded-md shadow-lg overflow-hidden mb-5 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-                    <img src="https://source.unsplash.com/432x600?white" alt="Image Caption"
-                        class="rounded-lg w-full" />
+
+                <!-- Skil -->
+                <div class="w-full px-5 mb-10 lg:w-1/3">
+                    <h3 class="font-bold mb-3 max-w-md lg:pt-12 lg:text-2xl">Skil 🤹</h3>
+                    <div class="gap-8 sm:grid sm:grid-cols-2">
+                        <div>
+                            <dl>
+                                <dt class="text-sm font-medium text-secondary">Frontend</dt>
+                                <dd class="flex items-center mb-3">
+                                    <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+                                        <div class="bg-primary h-2.5 rounded" style="width: 70%">
+                                        </div>
+                                    </div>
+                                    <span class="text-sm font-medium text-secondary">7.0</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="text-sm font-medium text-secondary">Backend</dt>
+                                <dd class="flex items-center mb-3">
+                                    <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+                                        <div class="bg-primary h-2.5 rounded" style="width: 40%">
+                                        </div>
+                                    </div>
+                                    <span class="text-sm font-medium text-secondary">4.0</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="text-sm font-medium text-secondary">UI-UX Design</dt>
+                                <dd class="flex items-center mb-3">
+                                    <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+                                        <div class="bg-primary h-2.5 rounded" style="width: 83%">
+                                        </div>
+                                    </div>
+                                    <span class="text-sm font-medium text-secondary">8.3</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl>
+                                <dt class="text-sm font-medium text-secondary">Figma</dt>
+                                <dd class="flex items-center mb-3">
+                                    <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+                                        <div class="bg-primary h-2.5 rounded" style="width: 80%">
+                                        </div>
+                                    </div>
+                                    <span class="text-sm font-medium text-secondary">8.0</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="text-sm font-medium text-secondary">Adobe Creative Suite</dt>
+                                <dd class="flex items-center mb-3">
+                                    <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+                                        <div class="bg-primary h-2.5 rounded" style="width: 86%">
+                                        </div>
+                                    </div>
+                                    <span class="text-sm font-medium text-secondary">8.6</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="text-sm font-medium text-secondary">IOT</dt>
+                                <dd class="flex items-center">
+                                    <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+                                        <div class="bg-primary h-2.5 rounded" style="width: 7 8%">
+                                        </div>
+                                    </div>
+                                    <span class="text-sm font-medium text-secondary">7.8</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="mt-8 lg:-mt-0">
+                        <h3 class="font-bold text-dark mb-3 max-w-md lg:text-2xl">Minat 🧩</h3>
+                        <div class="flex flex-wrap">
+                            <kbd
+                                class="px-2 py-1.5 text-xs m-1 font-semibold text-dark bg-slate-200 border border-gray-200 rounded-full">HTML
+                                + CSS</kbd>
+                            <kbd
+                                class="px-2 py-1.5 text-xs m-1 font-semibold text-dark bg-slate-200 border border-gray-200 rounded-full">Dart</kbd>
+                            <kbd
+                                class="px-2 py-1.5 text-xs m-1 font-semibold text-dark bg-slate-200 border border-gray-200 rounded-full">Mendengar
+                                musik</kbd>
+                            <kbd
+                                class="px-2 py-1.5 text-xs m-1 font-semibold text-dark bg-slate-200 border border-gray-200 rounded-full">Typografi</kbd>
+                            <kbd
+                                class="px-2 py-1.5 text-xs m-1 font-semibold text-dark bg-slate-200 border border-gray-200 rounded-full">Video
+                                Editing</kbd>
+                        </div>
+                    </div>
                 </div>
-                <div class="rounded-md shadow-lg overflow-hidden mb-5 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-                    <img src="https://source.unsplash.com/432x600?white" alt="Image Caption"
-                        class="rounded-lg w-full" />
-                </div>
-                <div class="rounded-md shadow-lg overflow-hidden mb-5 sm:mb-0 sm:w-64 md:w-80 lg:w-72">
-                    <img src="https://source.unsplash.com/432x600?white" alt="Image Caption"
-                        class="rounded-lg w-full" />
+
+                <!-- Media Sosial -->
+                <div class="w-full px-5 mb-10 lg:w-1/3">
+                    <h3 class="font-bold mb-3 max-w-md lg:pt-12 lg:text-2xl">Media sosial 📱</h3>
+                    <p class="font-medium text-base text-secondary text-justify max-w-xl lg:text-lg">Jika butuh bantuan,
+                        bekerja
+                        sama atau ingin mengetahui saya lebih lanjut, kalian bisa temukan
+                        saya melalui <span class="text-dark font-bold">media sosial</span> berikut.</p>
+
+                    <div class="flex items-center">
+                        <!-- Dribbble -->
+                        <a href="https://dribbble.com/autouruns" target="_blank"
+                            class="w-10 h-10 mt-3 mr-3 flex justify-center items-center shadow-lg rounded-lg grayscale bg-secondary hover:grayscale-0 hover:bg-[#EA4C89] transition duration-500">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-white scale-50">
+                                <title>Dribbble</title>
+                                <path
+                                    d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
+                            </svg>
+                        </a>
+                        <!-- Github -->
+                        <a href="https://github.com/aautoruns" target="_blank"
+                            class="w-10 h-10 mt-3 mr-3 flex justify-center items-center shadow-lg rounded-lg grayscale bg-secondary hover:grayscale-0 hover:bg-[#252525] transition duration-500">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-white scale-50">
+                                <title>GitHub</title>
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/aautoruns" target="_blank"
+                            class="w-10 h-10 mt-3 mr-3 flex justify-center items-center shadow-lg rounded-lg grayscale bg-secondary hover:grayscale-0 hover:bg-[#4700A3] transition duration-500">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-white scale-50">
+                                <title>Instagram</title>
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg>
+                        </a>
+                        <!-- Linkedn -->
+                        <a href="https://www.linkedin.com/in/galih-azella-firdaus-61079b208/" target="_blank"
+                            class="w-10 h-10 mt-3 mr-3 flex justify-center items-center shadow-lg rounded-lg grayscale bg-secondary hover:grayscale-0 hover:bg-[#0A66C2] transition duration-500">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-white scale-50">
+                                <title>LinkedIn</title>
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <!-- TikTok -->
+                        <a href="http://tiktok.com/@andrew_garfeild" target="_blank"
+                            class="w-10 h-10 mt-3 mr-3 flex justify-center items-center shadow-lg rounded-lg grayscale bg-secondary hover:grayscale-0 hover:bg-[#252525] transition duration-500">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-white scale-50">
+                                <title>TikTok</title>
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                            </svg>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/galih_azellaa" target="_blank"
+                            class="w-10 h-10 mt-3 mr-3 flex justify-center items-center shadow-lg rounded-lg grayscale bg-secondary hover:grayscale-0 hover:bg-[#00aeff] transition duration-500">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-white scale-50">
+                                <title>Twitter</title>
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Carousel -->
+    </section>
+    <!-- End About Section -->
 
-    <!-- JS -->
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <!-- JavaScript -->
+    <script src="dist/js/script.js"></script>
 </body>
 
 </html>
