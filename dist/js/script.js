@@ -69,3 +69,28 @@ window.onscroll = function () {
     header.classList.remove('navbar-fixed');
   }
 };
+
+// Data Filter
+window.addEventListener('load', () => {
+  let i = e('.portfolio-container');
+  if (i) {
+    let l = new Isotope(i, { itemSelector: '.portfolio-item' }),
+      o = e('#portfolio-flters li', !0);
+    t(
+      'click',
+      '#portfolio-flters li',
+      function (e) {
+        e.preventDefault(),
+          o.forEach(function (e) {
+            e.classList.remove('filter-active');
+          }),
+          this.classList.add('filter-active'),
+          l.arrange({ filter: this.getAttribute('data-filter') }),
+          l.on('arrangeComplete', function () {
+            AOS.refresh();
+          });
+      },
+      !0
+    );
+  }
+});
