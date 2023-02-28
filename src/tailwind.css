@@ -7,7 +7,8 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-white bg-opacity-80;
+  @apply fixed z-[9999] bg-white bg-opacity-50;
+  backdrop-filter: blur(8px);
 }
 
 .hamburger-line {
