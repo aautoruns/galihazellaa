@@ -1,720 +1,418 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<!doctype html>
+<html lang=en class=scroll-smooth>
 <head>
-    <!-- Web Identity -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galih Azella Firdaus</title>
-    <link rel="shortcut icon" href="dist/img/hero.webp" type="image/x-icon">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- Vendor -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
-        integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Tailwind CSS -->
-    <link href="/dist/css/style.css" rel="stylesheet">
-
+<meta charset=UTF-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Galih Azella Firdaus</title>
+<link rel="shortcut icon" href=dist/img/hero.webp type=image/x-icon>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap" rel=stylesheet>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<link href=/dist/css/style.css rel=stylesheet>
 </head>
-
-<body>
-    <!-- Header -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-5">
-                    <a href="#home" class="block py-6 capitalize" id="greetings"></a>
-                </div>
-                <div class="flex items-center px-5">
-
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-                    </button>
-
-                    <nav id="nav-menu"
-                        class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 border border-slate-200 lg:border-none lg:border-slate-50 shadow lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
-                        <ul class="block px-5 top lg:flex">
-                            <li>
-                                <a href="#home" class="block py-2 px-4 hover:font-bold">🏡 Home</a>
-                            </li>
-                            <li>
-                                <a href="#resume" class="block py-2 px-4 hover:font-bold">✨ Mini Resume</a>
-                            </li>
-                            <li>
-                                <a href="#portofolio" class="block py-2 px-4 hover:font-bold">📌 Portofolio</a>
-                            </li>
-                            <li
-                                class="bg-alpha rounded-md text-white mt-3 lg:bg-transparent lg:rounded-none lg:text-black lg:mt-0">
-                                <a href="#kontak" class="block py-2 px-4 hover:font-bold">📞 Kontak</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- Home Section -->
-    <section id="home" class="pt-52 pb-32">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-bold text-alpha mt-1 md:text-xl"> Halo sobat👋 saya<span
-                            class="block text-dark text-3xl mb-2 lg:text-5xl">Galih Azella Firdaus</span></h1>
-                    <h2 class="lg:text-lg">Saya seorang <span class="text-beta font-semibold" id="typed"></span>
-                    </h2>
-                    <p class="text-dark mb-8 lg:text-lg">Selamat datang di <span class="font-bold">"Web
-                            Portofolio"</span> saya
-                        ✨</p>
-
-                    <a href="#"
-                        class="text-base font-semibold text-white bg-alpha py-3 px-5 rounded-lg hover:shadow-lg hover:bg-red-600 transition duration-300 ease-in-out">Butuh
-                        bantuan? 🆘</a>
-                </div>
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:right-0 lg:mt-9">
-                        <img src="dist/img/hero.webp" class="max-w-full mx-auto" alt="me">
-                        <span class="absolute bottom-0 -z-10 -top-5 lg:top-10 left-1/2 -translate-x-1/2 md:scale-125">
-                            <svg width="350" height="350" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#B0233C"
-                                    d="M27.3,-47.8C33.3,-43.7,34.8,-32.3,43.1,-23.2C51.3,-14,66.3,-7,69.7,2C73.2,11,65.1,22,57.2,31.6C49.2,41.3,41.4,49.7,31.8,52.1C22.3,54.5,11.2,51.1,0.9,49.6C-9.4,48.1,-18.9,48.5,-31.7,48C-44.5,47.5,-60.8,46,-70.5,37.8C-80.3,29.6,-83.6,14.8,-79.6,2.3C-75.6,-10.2,-64.3,-20.4,-54.6,-28.7C-45,-37,-36.9,-43.5,-28,-45.9C-19.2,-48.4,-9.6,-47,0.5,-47.9C10.6,-48.7,21.2,-51.9,27.3,-47.8Z"
-                                    transform="translate(100 100) scale(1.2)" />
-                            </svg>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Home Section -->
-
-    <!-- Mini Resume Section -->
-    <section id="resume" class="pt-36 pb-32">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <!-- Biodata -->
-                <div class="w-full px-5 mb-10 lg:w-1/3">
-                    <h4 class="font-bold mb-3 text-2xl text-center">Mini Resume & CV 📄</h4>
-                    <img src="dist/img/fotoku.webp" alt="me" class="bg-charlie rounded-full mx-auto w-52 h-52 my-6">
-                    <div class="font-bold text-dark mb-3 max-w-md leading-relaxed text-center">
-                        <h1 class="font-bold text-xl">Galih Azella Firdaus</h1>
-                    </div>
-                    <p class="font-medium text-base text-beta text-justify max-w-xl lg:text-l">Saya suka hal-hal yang
-                        berbau kreatif, seperti menggambar, mengedit foto/video, mendesain UI-UX, dll.</p>
-                    <div class="container">
-                        <div class="flex flex-wrap">
-                            <div class="flex flex-wrap w-full mt-5 justify-center">
-                                <div class="bg-[#1DBF73] rounded-full w-10 h-10 mx-2">
-                                    <a href="https://www.fiverr.com/galihazellaa" target="_blank"
-                                        class="w-10 h-10 flex justify-center items-center">
-                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                            class="scale-75">
-                                            <title>Fiverr</title>
-                                            <path class="fill-white"
-                                                d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.546.43.858 1.006.858.43 0 .732-.175.83-.487l1.425.4c-.351.848-1.22 1.364-2.255 1.364-1.748 0-2.549-1.355-2.549-2.515 0-1.14.703-2.505 2.45-2.505 1.856 0 2.471 1.384 2.471 2.408 0 .224-.01.37-.02.477zm-1.562-.945c-.04-.42-.342-.81-.889-.81-.508 0-.81.225-.908.81h1.797zM7.508 15.44h1.416l1.767-4.874h-1.62l-.86 2.837-.878-2.837H5.72l1.787 4.874zm-6.6 0H2.51v-3.558h1.524v3.558h1.591v-4.874H2.51v-.302c0-.332.235-.536.606-.536h.918V8.412H2.85c-1.162 0-1.943.712-1.943 1.755v.4H0v1.316h.908v3.558z" />
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="bg-[#1d4ed8] rounded-full w-10 h-10 mx-2">
-                                    <a href="https://www.linkedin.com/in/galih-azella-firdaus-61079b208/"
-                                        target="_blank" class="w-10 h-10 flex justify-center items-center">
-                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                            class="fill-current text-white scale-50">
-                                            <title>LinkedIn</title>
-                                            <path
-                                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="bg-white shadow border border-charlie rounded-full w-10 h-10 mx-2">
-                                    <a href="https://glints-dashboard.s3.ap-southeast-1.amazonaws.com/company-logo/805d861f71c172ce260a247028cb0718.png"
-                                        target="_blank" class="w-10 h-10 flex justify-center items-center">
-                                        <div>
-                                            <img src="https://glints-dashboard.s3.ap-southeast-1.amazonaws.com/company-logo/805d861f71c172ce260a247028cb0718.png"
-                                                class="scale-50 m-auto">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="w-full h-1 my-4 mt-5 bg-dark">
-                    <div class="flex font-bold">
-                        <h1 class="">Pekerjaan</h1>
-                        <h2 class="ml-[170px] lg:ml-[218px] text-right">Mahasiswa</h2>
-                    </div>
-                    <hr class="w-full h-1 my-4 bg-dark">
-                    <div class="flex font-bold">
-                        <h1 class="">Tanggal lahir</h1>
-                        <h2 class="ml-[123px] lg:ml-[190px] text-right">6 Januari 2003</h2>
-                    </div>
-                    <hr class="w-full h-1 my-4 bg-dark">
-                    <div class="flex font-bold">
-                        <h1 class="">Surel</h1>
-                        <h2 class="ml-[58px] lg:ml-[107px] text-right"><a
-                                href="mailto:galihazellafirdaus.com?subject=Hello! I'm from your portfolio">galihazellafirdaus@gmail.com</a>
-                        </h2>
-                    </div>
-                    <hr class="w-full h-1 my-4 mb-5 bg-dark">
-                    <button
-                        class=" w-full border-[3px] border-dark h-12 text-center inline-flex items-center justify-center font-bold hover:bg-dark hover:text-white shadow"><a
-                            href="https://www.behance.net/galihazellaa/resume">Download
-                            CV 📃</a>
-                    </button>
-                </div>
-
-                <!-- Pendidikan -->
-                <div class="flex flex-wrap px-5 mx-auto lg:w-1/3">
-                    <div class="text-2xl font-bold">Pendidikan
-                        <div class="kuliah">
-                            <hr class="w-full h-1 bg-dark">
-                            <hr class="w-full h-1 bg-dark">
-                            <h1 class="text-xl font-bold text-left mt-6">STMIK Widya Pratama Pekalongan🧑‍💻
-                            </h1>
-                            <h6 class="text-sm font-normal text-left mb-5">Oktober 2021 - Sekarang</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Jl. Patriot No.25, Dukuh,
-                                Kec.
-                                Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51146</p>
-                            <hr class="w-full h-1 bg-charlie">
-                        </div>
-                        <div class="sma">
-                            <h1 class="text-xl font-bold text-left mt-6">SMAN 1 Kedungwuni 👨‍🎓</h1>
-                            <h6 class="text-sm font-normal text-left mb-5">Juli 2018 - Juni 2021</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Sopaten, Kedungwuni Barat, Kec.
-                                Kedungwuni, Kabupaten Pekalongan, Jawa Tengah 51173</p>
-                            <hr class="w-full h-1 bg-charlie">
-                        </div>
-                        <div class="sd">
-                            <h1 class="text-xl font-bold text-left mt-6">SMPN 2 Kedungwuni 👨‍🎓</h1>
-                            <h6 class="text-sm font-normal text-left mb-5">Juli 2016 - Juli 2018</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Jl. Bebekan, Kedungwuni
-                                Barat, Kec.
-                                Kedungwuni, Kab. Pekalongan, Jawa Tengah, dengan kode pos 51173.</p>
-                            <hr class="w-full h-1 bg-charlie">
-                        </div>
-                        <div class="sd mb-5">
-                            <h1 class="text-xl font-bold text-left mt-6">SDN 06 Kedungwuni 👨‍🎓</h1>
-                            <h6 class="text-sm font-normal text-left mb-5">Juli 2009 - Juli 2016</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Gembong Timur, Kedungwuni
-                                Tim., Kec.
-                                Kedungwuni, Kab. Pekalongan, Jawa Tengah 51173</p>
-                            <hr class="w-full h-1 bg-charlie">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Organisasi -->
-                <div class="flex flex-wrap px-5 mx-auto lg:w-1/3">
-                    <div class="text-2xl font-bold">Organisasi
-                        <div class="wpitv mb-5">
-                            <hr class="w-full h-1 bg-dark">
-                            <hr class="w-full h-1 bg-dark">
-                            <h1 class="text-xl font-bold text-left mt-6">WPiTV 🎥</h1>
-                            <h6 class="text-sm font-normal text-left mb-5">September 2021 - Sekarang</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Jl. Patriot No.25, Dukuh,
-                                Kec.
-                                Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51146</p>
-                            <hr class="w-full h-1 bg-charlie">
-                        </div>
-                    </div>
-
-                    <!-- Skill -->
-                    <div class="text-2xl font-bold">Ketrampilan
-                        <hr class="w-full h-1 bg-dark">
-                        <hr class="w-full h-1 bg-dark">
-                        <div class="gap-8 mt-5 sm:grid sm:grid-cols-2">
-                            <div>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">Frontend</dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie h-2.5 rounded" style="width: 70%">
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">Backend</dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie h-2.5 rounded" style="width: 40%">
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">UI / UX</dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie h-2.5 rounded" style="width: 80%">
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">Figma
-                                    </dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie h-2.5 rounded" style="width: 84%">
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">Adobe Creative Suite</dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie h-2.5 rounded" style="width: 70%">
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl class="mb-5">
-                                    <dt class="text-sm font-bold mb-3">IOT</dt>
-                                    <dd class="flex items-center">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie h-2.5 rounded" style="width: 83%">
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                        <hr class="w-full h-1 bg-charlie">
-
-                        <!-- Minar -->
-                        <div class="text-2xl mt-10 font-bold">Minat
-                            <hr class="w-full h-1 bg-dark">
-                            <hr class="w-full h-1 bg-dark">
-                            <div class="interest m-1 mt-5">
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Seni
-                                    Digital
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">UI
-                                    Design
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Western
-                                    Music
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Film
-                                    & Series
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Fotografi
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Web
-                                    Design
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Typografi
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Lego
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Meme
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Junk
-                                    Food
-                                </button>
-                                <button type="button"
-                                    class="border border-dark font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Cappuchino
-                                </button>
-                                <hr class="w-full h-1 mt-5 bg-charlie">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Job Experience -->
-                <div class="text-2xl px-5 mt-10 lg:mt-0 font-bold text-justify">Pengalaman Kerja 💪
-                    <hr class="w-full h-1 bg-dark">
-                    <hr class="w-full h-1 bg-dark">
-                    <div class="lkkp m-1 mt-5">
-                        <h1 class="text-xl font-bold text-left mt-6"><span class="font-medium">Magang</span> -
-                            Lingkar
-                            Kajian Kota Pekalongan 🦅</h1>
-                        <h6 class="text-base font-semibold text-left capitalize">Sebagai - <span
-                                class="font-bold">Desainer grafis dan tim IT</span>
-                        </h6>
-                        <h6 class="text-sm font-normal text-left mb-5">November 2022 - Desember 2023</h6>
-                        <p class="text-base font-normal text-beta mt-2">Lingkar Kajian Kota Pekalongan adalah
-                            lembaga
-                            riset dan
-                            advokasi terdaftar yang berkomitmen untuk mengembangkan iklim
-                            dan budaya ilmiah secara kreatif dan kritis di Kota Pekalongan.</p>
-                        <hr class="w-full h-1 mt-5 bg-charlie">
-                    </div>
-                    <div class="expo-kampus m-1 mt-5">
-                        <h1 class="text-xl font-bold text-left mt-6"><span class="font-medium">Part Time</span> -
-                            Expo
-                            Campus SMANDUNG 2022 🎡</h1>
-                        <h6 class="text-base font-semibold text-left capitalize">Sebagai - <span
-                                class="font-bold">Desainer header footer dan logo acara</span></h6>
-                        <h6 class="text-sm font-normal text-left mb-5">Desember 2021</h6>
-                        <p class="text-base font-normal text-beta mt-2">Acara tahunan alumni SMAN 1 Kedungwuni,
-                            dalam mempromosikan perguruan tinggi di Indonesia untuk adik-adik kelasnya yang akan
-                            menempuh dunia kuliah,
-                            agar memiliki informasi dan referensi tentang kampus-kampus di Indonesia.</p>
-                        <hr class="w-full h-1 mt-5 bg-charlie">
-                    </div>
-                    <div class="expo-kampus m-1 mt-5">
-                        <h1 class="text-xl font-bold text-left mt-6"><span class="font-medium">Part Time</span> -
-                            SMANDUNG 2021 Yearbook 📕</h1>
-                        <h6 class="text-base font-semibold text-left capitalize">Sebagai - <span
-                                class="font-bold">Desainer cover buku</span></h6>
-                        <h6 class="text-sm font-normal text-left mb-5">September 2020</h6>
-                        <p class="text-base font-normal text-beta mt-2">Saya ikut andil sebagai desainer cover
-                            sebuah
-                            buku tahunan yang selalu diterbitkan saat murid kelas 12 akan lulus. Berlangsung dari
-                            bulan
-                            September-Januari, mulai persiapan, pemotretan sampai pembagian buku.</p>
-                        <hr class="w-full h-1 mt-5 bg-charlie">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Mini Resume Section -->
-
-    <!-- Portfolio Section-->
-    <section id="portofolio" class="pt-32 pb-32">
-        <div class="container">
-            <div class="flex flex-wrap text-justify">
-                <div class="w-full px-5 lg:w-full text-center">
-                    <h4 class="font-bold text-2xl lg:text-5xl leading-6">Portfolio <span
-                            class="font-normal">Section</span>
-                    </h4>
-                    <div class="inline-flex items-center justify-center w-full">
-                        <hr class="w-64 h-1 my-8 bg-beta border-0 rounded">
-                        <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2">
-                            <svg aria-hidden="true" class="w-5 h-5" viewBox="0 0 24 27" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="font-bold text-l text-center mb-5">💡 Klik emoji untuk melihat projek.</h3>
-                </div>
-                <div class="mx-auto max-w-full lg:grid lg:grid-cols-3 lg:gap-6 lg:mt-12">
-                    <div
-                        class="bg-[#0F102B] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href="https://github.com/aautoruns/pahe_app/" target="_blank">
-                            <h1 class="text-4xl mt-10 ml-7">🍿</h1>
-                        </a>
-                        <div class="text-l m-10 font-light text-[#00F0FF]">
-                            <h1 class="text-2xl font-extrabold text-[#00F0FF]">Pahe+ <span class="block">Movie
-                                    Wiki</span></h1>
-                            <p class="text-sm mt-3">Aplikasi katalog film yang berisi berbagai informasi film yang
-                                sedang tayang di bioskop, dll.</p>
-                        </div>
-                    </div>
-
-
-                    <div
-                        class="bg-[#F8F8F8] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href="https://github.com/aautoruns/kopicalf/" target="_blank">
-                            <h1 class="text-4xl mt-10 ml-7">☕</h1>
-                        </a>
-                        <div class="text-l m-10 font-light tex</a>t-dark">
-                            <h1 class="text-2xl font-extrabold text-[#FF002E]">Kopi <span
-                                    class="text-[#001AFF]">Calf</span></h1>
-                            <p class="text-sm mt-3">Sebuah kedai minum di Jakarta yang menghadirkan kopi dan susu
-                                kalengan yang
-                                siap minum, dengan berbagai varian rasa, dan harga terjangkau.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-[#000080] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href="https://github.com/aautoruns/tugasakhir_webdesign/" target="_blank">
-                            <h1 class="text-4xl mt-10 ml-7">🎒</h1>
-                        </a>
-                        <div class="text-l m-10 font-light text-white">
-                            <h1 class="text-2xl font-extrabold text-white">SMANDUNG Website</h1>
-                            <p class="text-sm mt-3">Hasil final tugas akhir lanjutan UI/UX matkul Web Design.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-[#BC0909] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href="https://github.com/aautoruns/anfstudio_crud" target="_blank">
-                            <h1 class="text-4xl mt-10 ml-7">👕</h1>
-                        </a>
-                        <div class="text-l m-10 font-light text-white">
-                            <h1 class="text-2xl font-extrabold text-white">ANF Studio</h1>
-                            <p class="text-sm mt-3">Rumah sablon kaos yang sangat kompeten di Kabupaten Batang, Jawa
-                                Tengah.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-[#FEA800] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href="https://www.instagram.com/p/ChALOGZvuFk/" target="_blank">
-                            <h1 class="text-4xl mt-10 ml-7">🖼️</h1>
-                        </a>
-                        <div class="text-l m-10 font-light text-dark">
-                            <h1 class="text-2xl font-extrabold text-dark">Desain Vector</h1>
-                            <p class="text-sm mt-3">Desain vector yang mengambil referensi seorang karakter suatu
-                                film/series/game yang saya buat desain vectornya.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-[#000080] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href="https://dribbble.com/shots/20037207-SMANDUNG-Official-Website-Re-Design"
-                            target="_blank">
-                            <h1 class="text-4xl mt-10 ml-7">🦅</h1>
-                        </a>
-                        <div class="text-l m-10 font-light text-white">
-                            <h1 class="text-2xl font-extrabold text-white">SMANDUNG Website UI-UX</h1>
-                            <p class="text-sm mt-3">Desain UI/UX yang juga sebagai hasil tugas akhir mata kuliah
-                                Web Design kampus saya.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-[#FEA800] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href="https://www.instagram.com/stories/highlights/17897984605819174/" target="_blank">
-                            <h1 class="text-4xl mt-10 ml-7">🖋️</h1>
-                        </a>
-                        <div class="text-l m-10 font-light text-dark">
-                            <h1 class="text-2xl font-extrabold text-dark">Typografi</h1>
-                            <p class="text-sm mt-3">Teknik melakukan penyusunan huruf dan teks di dalam suatu
-                                pembuatan visual agar dapat terbaca dan menarik
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Portfolio Section-->
-
-    <!-- Contact Section -->
-    <section id="kontak" class="lg:pt-36 pb-32">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="self-center px-4 rounded-xl w-full h-full lg:max-w-xl lg:mx-auto">
-                    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
-                        <h2 class="mb-5 text-4xl font-bold">
-                            Kotak Bantuan 🆘</h2>
-                        <div class="grid border-t border-charlie">
-                            <div class="pt-8">
-                                <h3 class="flex items-center text-lg font-bold mb-1">
-                                    🙋‍♀️ Bagaimana cara mengorder desain saya?
-                                </h3>
-                                <h3 class="font-semibold">Jawaban :</h3>
-                                <p class="text-normal text-justify">Banyak cara untuk mengkontak saya untuk melakukan
-                                    ordering desain. Cara pertama, anda bisa chat langsung saya lewat email pribadi,
-                                    Whats'App, DM Instagram, dan juga lewat form bantuan dilaman ini. Atau cara kedua
-                                    yang cukup
-                                    formal melalui platform freelance <span class="font-bold text-green-400"><a
-                                            href="https://www.fiverr.com/galihazellaa"> Fiverr</a></span> disana anda
-                                    bisa memesan desain yang anda inginkan. Untuk pengiriman pemesanan saya biasanya
-                                    memakai sharelink Google Drive.</p>
-                            </div>
-                            <div class="pt-8">
-                                <h3 class="flex items-center text-lg font-bold mb-1">
-                                    🙋‍♀️ Pricelist dan metode pembayaran.
-                                </h3>
-                                <h3 class="font-semibold">Jawaban :</h3>
-                                <p class="text-normal text-justify">Untuk harga tergantung rumitnya jadi tidak menentu.
-                                    Untuk dilayanan Fiverr saya mematok 5-15 Dollar per desain. Metode
-                                    pembayaran bisa melalui transfer bank, atau melalui dompet digital seperti Paypal,
-                                    OVO,
-                                    DANA, Shopepay, dan Gopay.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="self-center px-4 rounded-xl w-full h-full lg:max-w-xl lg:mx-auto">
-                    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
-                        <h2 class="mb-5 text-4xl font-bold">
-                            Kirim Pesan Disini 📩</h2>
-                        <form target="_blank" action="https://formsubmit.co/galihazellafirdaus@gmail.com" method="POST">
-                            <!-- Nama -->
-                            <input type="text" name="name" id="name"
-                                class="bg-gray-50 mb-3 border border-charlie text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                                placeholder="Masukan Nama">
-                            <!-- Email -->
-                            <div class="flex mb-3">
-                                <span
-                                    class="inline-flex items-center px-3 text-sm bg-gray-50 border border-r-0 border-gray-300 rounded-l-md">
-                                    @
-                                </span>
-                                <input type="email" name="email" id="email"
-                                    class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5"
-                                    placeholder="Masukan Email">
-                            </div>
-
-                            <!-- Text Area -->
-                            <textarea id="message" rows="12"
-                                class="block p-2.5 w-full text-sm bg-gray-50 rounded-lg border border-charlie focus:ring-blue-500 focus:border-blue-500"
-                                placeholder="Ketik pesanmu disini..."></textarea>
-                            <!-- Button -->
-                            <button
-                                class="flex justify-center items-center mt-5 w-full h-12 rounded-lg bg-alpha font-semibold text-white transition duration-75 shadow-lg hover:bg-red-800">
-                                Kirimkan Pesan 📜
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="w-full px-4 mt-16">
-                    <h4 class="mb-5 text-2xl text-center font-bold">Media Sosial 📱</h4>
-                    <div class="flex justify-center">
-                        <!-- Behance -->
-                        <a href="https://www.behance.net/galihazellaa/" target="_blank">
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-charlie hover:bg-[#1769FF] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
-                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        class="fill-white w-8 h-8 mx-auto mt-2">
-                                        <title>Behance</title>
-                                        <path
-                                            d="M0 4.4804V19.243h7.1554c.6613 0 1.3078-.0832 1.9297-.248.6288-.1654 1.1905-.4203 1.6792-.7661.485-.3431.8784-.788 1.1677-1.3369.2862-.542.4294-1.187.4294-1.9354 0-.9232-.219-1.7109-.6675-2.369-.446-.6542-1.1187-1.1139-2.0274-1.3746.6674-.3161 1.1658-.7227 1.506-1.2177.3371-.4967.5058-1.1174.5058-1.8607 0-.6873-.1127-1.2677-.3375-1.7318-.2306-.4709-.552-.8452-.9632-1.1266-.4176-.2808-.912-.4857-1.4912-.6085-.5827-.1261-1.22-.1872-1.9264-.1872zm15.6674.9903v1.4567h5.9844V5.4707zM3.2509 6.9947h3.0407c.2873 0 .5683.0204.8359.0731.2728.0466.508.134.716.2595.2096.1205.3754.293.501.5132.1208.2203.1806.5038.1806.8474 0 .6189-.1811 1.0702-.5551 1.3426-.3778.2775-.8543.4147-1.4304.4147H3.2509zm15.545 1.2564c-.819 0-1.5587.1462-2.2294.436-.6705.2904-1.2463.6875-1.7318 1.1915-.4846.5011-.8535 1.0986-1.12 1.7909-.2612.69-.3942 1.4366-.3942 2.236 0 .8268.1284 1.5891.3835 2.2786.258.6923.6198 1.2822 1.0856 1.781.478.4967 1.046.8784 1.726 1.1497.6806.269 1.4382.4048 2.2803.4048 1.208 0 2.2446-.2771 3.0949-.8326.8599-.5528 1.4902-1.471 1.9058-2.7574h-2.585c-.1.3307-.359.649-.784.9467-.4295.2988-.9417.4492-1.534.4492-.8233 0-1.4588-.2168-1.8985-.6462-.4412-.4294-.7267-1.2289-.7267-2.0742h7.713c.0552-.8291-.0122-1.6218-.2045-2.3797-.1938-.7601-.5033-1.4365-.9393-2.029-.4355-.5931-.9904-1.0667-1.667-1.4165-.6788-.3543-1.4703-.5288-2.3747-.5288zm-.0887 2.217c.7209 0 1.3126.2092 1.6612.5954.3503.389.6065.9432.6766 1.6915h-4.7766c.0136-.2085.058-.4444.1339-.7045.0749-.2668.2039-.5164.3933-.753.1905-.2326.4402-.431.744-.5896.3109-.1608.6986-.2397 1.1676-.2397zM3.251 12.664h3.5334c.6996 0 1.2682.1602 1.6948.4836.4259.328.6405.8685.6405 1.6292 0 .3885-.0632.7094-.1946.9566-.131.2495-.3106.4466-.528.5896-.2172.1491-.4753.2498-.7661.3137-.2862.0639-.5905.092-.9115.092H3.2509z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- Dribbble -->
-                        <a href="https://dribbble.com/autouruns" target="_blank">
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-charlie hover:bg-[#EA4C89] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
-                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        class="fill-white w-8 h-8 mx-auto mt-2">
-                                        <title>Dribbble</title>
-                                        <path
-                                            d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- Github -->
-                        <a href="https://github.com/aautoruns" target="_blank">
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-charlie hover:bg-[#181717] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
-                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        class="fill-white w-8 h-8 mx-auto mt-2">
-                                        <title>GitHub</title>
-                                        <path
-                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- Instagram -->
-                        <a href="https://instagram.com/aautoruns" target="_blank">
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-charlie hover:bg-[#302683] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
-                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        class="fill-white w-8 h-8 mx-auto mt-2">
-                                        <title>Instagram</title>
-                                        <path
-                                            d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- Spotify -->
-                        <a href="https://open.spotify.com/user/o3f5ldym4o8xxjg4wa284iz3q?si=9Yi8wXXjTeCN-M-Jqobb0g&utm_source=copy-link"
-                            target="_blank">
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-charlie hover:bg-[#1DB954] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
-                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        class="fill-white w-8 h-8 mx-auto mt-2">
-                                        <title>Spotify</title>
-                                        <path
-                                            d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- Tiktok -->
-                        <a href="https://open.spotify.com/user/o3f5ldym4o8xxjg4wa284iz3q?si=9Yi8wXXjTeCN-M-Jqobb0g&utm_source=copy-link"
-                            target="_blank">
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-charlie hover:bg-[#252525] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
-                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                        class="fill-white w-8 h-8 mx-auto mt-2">
-                                        <title>TikTok</title>
-                                        <path
-                                            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Contact Section -->
-
-    <!-- Footer -->
-    <footer class="bg-gray-100 shadow px-6 py-8">
-        <h5 class="font-bold text-sm text-center">&copy; Copyright <span id="year"></span>
-            <a href="http://galihazellaa.vercel.app/" class="hover:underline">Galih Azella Firdaus</a>. All Rights
-            Reserved.
-        </h5>
-        <p class="flex justify-center font-normal text-sm text-center"><a href="https://tailwindcss.com/">Made with
-                <span class="font-bold">Tailwind CSS </span></a><span>
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                    class="fill-sky-400 w-5 h-5 mx-2">
-                    <title>Tailwind CSS</title>
-                    <path
-                        d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
-                </svg>
-            </span>
-        </p>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Back to top Start -->
-    <button id="to-top-button" type="button"
-        class="fixed bottom-5 right-5 inline-block rounded-xl grayscale hover:grayscale-0 bg-charlie hover:bg-white shadow-lg p-2 uppercase leading-normal transition duration-150 ease-in-out hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg">
-        <img src="https://cdn-icons-png.flaticon.com/512/2808/2808463.png" alt="back-to-top" class="w-8 h-8 mx-auto">
-    </button>
-    <!-- Back to top button -->
-
-    <!-- JavaScript -->
-    <script src="dist/js/script.js"></script>
-
+<body class="dark:bg-gray-900 dark:text-charlie">
+<header class="bg-transparent dark:bg-gray-900 absolute top-0 left-0 w-full flex items-center z-10">
+<div class=container>
+<div class="flex items-center justify-between relative">
+<div class=px-5><a href=#home class="block py-6 capitalize" id=greetings></a></div>
+<div class="flex items-center px-5"><button id=hamburger name=hamburger type=button class="block absolute right-4 lg:hidden"><span class="hamburger-line dark:bg-white transition duration-300 ease-in-out origin-top-left"></span><span class="hamburger-line dark:bg-white transition duration-300 ease-in-out"></span><span class="hamburger-line dark:bg-white transition duration-300 ease-in-out origin-bottom-left"></span></button>
+<div class="flex mr-10 order-2"><button id=theme-toggle type=button class="text-gray-400 bg-slate-800 dark:text-yellow-400 hover:bg-[#080E16] dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full text-sm p-2.5"><svg id=theme-toggle-dark-icon class="w-5 h-5 hidden" fill=currentColor viewBox="0 0 20 20" xmlns=http://www.w3.org/2000/svg>
+<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+</svg><svg id=theme-toggle-light-icon class="w-5 h-5 hidden" fill=currentColor viewBox="0 0 20 20" xmlns=http://www.w3.org/2000/svg>
+<path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule=evenodd clip-rule=evenodd></path>
+</svg></button></div>
+<nav id=nav-menu class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white dark:bg-slate-900 dark:backdrop-filter dark:backdrop-blur-2xl dark:bg-opacity-90 bg-clip-padding py-5 border border-slate-200 dark:border-slate-800 lg:border-none lg:border-slate-50 shadow lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
+<ul class="block px-5 top lg:flex">
+<li><a href=#home class="block py-2 px-4 hover:font-bold">🏡 Home</a></li>
+<li><a href=#resume class="block py-2 px-4 hover:font-bold">✨ Mini Resume</a></li>
+<li><a href=#portofolio class="block py-2 px-4 hover:font-bold">📌 Portofolio</a></li>
+<li class="bg-alpha rounded-md mt-3 text-white lg:text-black dark:text-white lg:bg-transparent lg:rounded-none lg:mt-0">
+<a href=#kontak class="block py-2 px-4 hover:font-bold">📞 Kontak</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<section id=home class="pt-52 pb-32">
+<div class=container>
+<div class="flex flex-wrap">
+<div class="w-full self-center px-4 lg:w-1/2">
+<h1 class="text-base font-bold text-alpha mt-1 md:text-xl">Haloo 👋 saya<span class="block text-dark dark:text-white text-3xl mb-2 lg:text-5xl">Galih Azella Firdaus</span></h1>
+<h2 class=lg:text-lg>Saya seorang<span class="text-beta font-semibold" id=typed></span></h2>
+<p class="mb-8 lg:text-lg">Selamat datang di<span class=font-bold>"Web Portofolio"</span>saya ✨
+</p><a href=# class="text-base font-semibold text-white bg-alpha py-3 px-5 rounded-lg hover:shadow-lg hover:bg-red-600 transition duration-300 ease-in-out">Butuh bantuan? 🆘</a>
+</div>
+<div class="w-full self-end px-4 lg:w-1/2">
+<div class="relative mt-10 lg:right-0 lg:mt-9"><img src=dist/img/hero.webp class="max-w-full mx-auto" alt=me><span class="absolute bottom-0 -z-10 -top-5 lg:top-10 left-1/2 -translate-x-1/2 md:scale-125"><svg width=350 height=350 viewBox="0 0 200 200" xmlns=http://www.w3.org/2000/svg>
+<path fill=#B0233C d=M27.3,-47.8C33.3,-43.7,34.8,-32.3,43.1,-23.2C51.3,-14,66.3,-7,69.7,2C73.2,11,65.1,22,57.2,31.6C49.2,41.3,41.4,49.7,31.8,52.1C22.3,54.5,11.2,51.1,0.9,49.6C-9.4,48.1,-18.9,48.5,-31.7,48C-44.5,47.5,-60.8,46,-70.5,37.8C-80.3,29.6,-83.6,14.8,-79.6,2.3C-75.6,-10.2,-64.3,-20.4,-54.6,-28.7C-45,-37,-36.9,-43.5,-28,-45.9C-19.2,-48.4,-9.6,-47,0.5,-47.9C10.6,-48.7,21.2,-51.9,27.3,-47.8Z transform="translate(100 100) scale(1.2)"/>
+</svg></span></div>
+</div>
+</div>
+</div>
+</section>
+<section id=resume class="pt-36 pb-32">
+<div class=container>
+<div class="flex flex-wrap">
+<div class="w-full px-5 mb-10 lg:w-1/3">
+<h4 class="font-bold mb-3 text-2xl text-center">Mini Resume & CV 📄</h4><img src=dist/img/fotoku.webp alt=me class="bg-charlie rounded-full mx-auto w-52 h-52 my-6">
+<div class="font-bold mb-3 max-w-md leading-relaxed text-center">
+<h1 class="font-bold text-xl">Galih Azella Firdaus</h1>
+</div>
+<p class="font-medium text-base text-beta text-justify max-w-xl lg:text-l">Saya suka hal-hal yang berbau kreatif, seperti menggambar, mengedit foto/video, mendesain UI-UX, dll.</p>
+<div class=container>
+<div class="flex flex-wrap">
+<div class="flex flex-wrap w-full mt-5 justify-center">
+<div class="bg-[#1DBF73] rounded-full w-10 h-10 mx-2"><a href=https://www.fiverr.com/galihazellaa target=_blank class="w-10 h-10 flex justify-center items-center"><svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class=scale-75>
+<title>Fiverr</title>
+<path class=fill-white d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.546.43.858 1.006.858.43 0 .732-.175.83-.487l1.425.4c-.351.848-1.22 1.364-2.255 1.364-1.748 0-2.549-1.355-2.549-2.515 0-1.14.703-2.505 2.45-2.505 1.856 0 2.471 1.384 2.471 2.408 0 .224-.01.37-.02.477zm-1.562-.945c-.04-.42-.342-.81-.889-.81-.508 0-.81.225-.908.81h1.797zM7.508 15.44h1.416l1.767-4.874h-1.62l-.86 2.837-.878-2.837H5.72l1.787 4.874zm-6.6 0H2.51v-3.558h1.524v3.558h1.591v-4.874H2.51v-.302c0-.332.235-.536.606-.536h.918V8.412H2.85c-1.162 0-1.943.712-1.943 1.755v.4H0v1.316h.908v3.558z"/>
+</svg></a></div>
+<div class="bg-[#1d4ed8] rounded-full w-10 h-10 mx-2"><a href=https://www.linkedin.com/in/galih-azella-firdaus-61079b208/ target=_blank class="w-10 h-10 flex justify-center items-center"><svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-current text-white scale-50">
+<title>LinkedIn</title>
+<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg></a></div>
+<div class="bg-white shadow border border-charlie rounded-full w-10 h-10 mx-2"><a href=https://glints-dashboard.s3.ap-southeast-1.amazonaws.com/company-logo/805d861f71c172ce260a247028cb0718.png target=_blank class="w-10 h-10 flex justify-center items-center">
+<div><img src=https://glints-dashboard.s3.ap-southeast-1.amazonaws.com/company-logo/805d861f71c172ce260a247028cb0718.png class="scale-50 m-auto"></div>
+</a></div>
+</div>
+</div>
+</div>
+<hr class="w-full h-1 my-4 mt-5 bg-dark">
+<div class="flex font-bold">
+<h1>Pekerjaan</h1>
+<h2 class="ml-[170px] lg:ml-[218px] text-right">Mahasiswa</h2>
+</div>
+<hr class="w-full h-1 my-4 bg-dark">
+<div class="flex font-bold">
+<h1>Tanggal lahir</h1>
+<h2 class="ml-[123px] lg:ml-[190px] text-right">6 Januari 2003</h2>
+</div>
+<hr class="w-full h-1 my-4 bg-dark">
+<div class="flex font-bold">
+<h1>Surel</h1>
+<h2 class="ml-[58px] lg:ml-[107px] text-right"><a href="mailto:galihazellafirdaus.com?subject=Hello! I'm from your portfolio">galihazellafirdaus@gmail.com</a>
+</h2>
+</div>
+<hr class="w-full h-1 my-4 mb-5 bg-dark"><button class="w-full border-[3px] border-dark dark:border-charlie dark:hover:border-red-800 h-12 text-center inline-flex items-center justify-center font-bold hover:bg-dark dark:hover:bg-alpha hover:text-white dark:hover:text-white shadow"><a href=https://www.behance.net/galihazellaa/resume>Download CV 📃</a></button>
+</div>
+<div class="flex flex-wrap px-5 mx-auto lg:w-1/3">
+<div class="text-2xl font-bold">Pendidikan<div class=kuliah>
+<hr class="w-full h-1 bg-dark">
+<hr class="w-full h-1 bg-dark">
+<h1 class="text-xl font-bold text-left mt-6">STMIK Widya Pratama Pekalongan🧑‍💻</h1>
+<h6 class="text-sm font-normal text-left mb-5">Oktober 2021 - Sekarang</h6>
+<p class="text-sm font-normal text-beta text-left mb-5">Jl. Patriot No.25, Dukuh, Kec. Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51146</p>
+<hr class="w-full h-1 bg-charlie">
+</div>
+<div class=sma>
+<h1 class="text-xl font-bold text-left mt-6">SMAN 1 Kedungwuni 👨‍🎓</h1>
+<h6 class="text-sm font-normal text-left mb-5">Juli 2018 - Juni 2021</h6>
+<p class="text-sm font-normal text-beta text-left mb-5">Sopaten, Kedungwuni Barat, Kec. Kedungwuni, Kabupaten Pekalongan, Jawa Tengah 51173</p>
+<hr class="w-full h-1 bg-charlie">
+</div>
+<div class=sd>
+<h1 class="text-xl font-bold text-left mt-6">SMPN 2 Kedungwuni 👨‍🎓</h1>
+<h6 class="text-sm font-normal text-left mb-5">Juli 2016 - Juli 2018</h6>
+<p class="text-sm font-normal text-beta text-left mb-5">Jl. Bebekan, Kedungwuni Barat, Kec. Kedungwuni, Kab. Pekalongan, Jawa Tengah, dengan kode pos 51173.</p>
+<hr class="w-full h-1 bg-charlie">
+</div>
+<div class="sd mb-5">
+<h1 class="text-xl font-bold text-left mt-6">SDN 06 Kedungwuni 👨‍🎓</h1>
+<h6 class="text-sm font-normal text-left mb-5">Juli 2009 - Juli 2016</h6>
+<p class="text-sm font-normal text-beta text-left mb-5">Gembong Timur, Kedungwuni Tim., Kec. Kedungwuni, Kab. Pekalongan, Jawa Tengah 51173</p>
+<hr class="w-full h-1 bg-charlie">
+</div>
+</div>
+</div>
+<div class="flex flex-wrap px-5 mx-auto lg:w-1/3">
+<div class="text-2xl font-bold">Organisasi<div class="wpitv mb-5">
+<hr class="w-full h-1 bg-dark">
+<hr class="w-full h-1 bg-dark">
+<h1 class="text-xl font-bold text-left mt-6">WPiTV 🎥</h1>
+<h6 class="text-sm font-normal text-left mb-5">September 2021 - Sekarang</h6>
+<p class="text-sm font-normal text-beta text-left mb-5">Jl. Patriot No.25, Dukuh, Kec. Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51146</p>
+<hr class="w-full h-1 bg-charlie">
+</div>
+</div>
+<div class="text-2xl font-bold">Ketrampilan
+<hr class="w-full h-1 bg-dark">
+<hr class="w-full h-1 bg-dark">
+<div class="gap-8 mt-5 sm:grid sm:grid-cols-2">
+<div>
+<dl>
+<dt class="text-sm font-bold mb-3">Frontend</dt>
+<dd class="flex items-center mb-3">
+<div class="w-full bg-transparant rounded h-2.5mr-2">
+<div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:70%></div>
+</div>
+</dd>
+</dl>
+<dl>
+<dt class="text-sm font-bold mb-3">Backend</dt>
+<dd class="flex items-center mb-3">
+<div class="w-full bg-transparant rounded h-2.5mr-2">
+<div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:40%></div>
+</div>
+</dd>
+</dl>
+<dl>
+<dt class="text-sm font-bold mb-3">UI / UX</dt>
+<dd class="flex items-center mb-3">
+<div class="w-full bg-transparant rounded h-2.5mr-2">
+<div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:80%></div>
+</div>
+</dd>
+</dl>
+</div>
+<div>
+<dl>
+<dt class="text-sm font-bold mb-3">Figma</dt>
+<dd class="flex items-center mb-3">
+<div class="w-full bg-transparant rounded h-2.5mr-2">
+<div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:84%></div>
+</div>
+</dd>
+</dl>
+<dl>
+<dt class="text-sm font-bold mb-3">Adobe Creative Suite</dt>
+<dd class="flex items-center mb-3">
+<div class="w-full bg-transparant rounded h-2.5mr-2">
+<div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:70%></div>
+</div>
+</dd>
+</dl>
+<dl class=mb-5>
+<dt class="text-sm font-bold mb-3">IOT</dt>
+<dd class="flex items-center">
+<div class="w-full bg-transparant rounded h-2.5mr-2">
+<div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:83%></div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<hr class="w-full h-1 bg-charlie">
+<div class="text-2xl mt-10 font-bold">Minat
+<hr class="w-full h-1 bg-dark">
+<hr class="w-full h-1 bg-dark">
+<div class="interest m-1 mt-5"><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Seni Digital</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">UI Design</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Western Music</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Film & Series</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Fotografi</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Web Design</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Typografi</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Lego</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Meme</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Junk Food</button><button type=button class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Cappuchino</button>
+<hr class="w-full h-1 mt-5 bg-charlie">
+</div>
+</div>
+</div>
+</div>
+<div class="text-2xl px-5 mt-10 lg:mt-0 font-bold text-justify">Pengalaman Kerja 💪
+<hr class="w-full h-1 bg-dark">
+<hr class="w-full h-1 bg-dark">
+<div class="lkkp m-1 mt-5">
+<h1 class="text-xl font-bold text-left mt-6"><span class=font-medium>Magang</span>- Lingkar Kajian Kota Pekalongan 🦅</h1>
+<h6 class="text-base font-semibold text-left capitalize">Sebagai -<span class=font-bold>Desainer grafis dan tim IT</span></h6>
+<h6 class="text-sm font-normal text-left mb-5">November 2022 - Desember 2023</h6>
+<p class="text-base font-normal text-beta mt-2">Lingkar Kajian Kota Pekalongan adalah lembaga riset dan advokasi terdaftar yang berkomitmen untuk mengembangkan iklim dan budaya ilmiah secara kreatif dan kritis di Kota Pekalongan.</p>
+<hr class="w-full h-1 mt-5 bg-charlie">
+</div>
+<div class="expo-kampus m-1 mt-5">
+<h1 class="text-xl font-bold text-left mt-6"><span class=font-medium>Part Time</span>- Expo Campus SMANDUNG 2022 🎡</h1>
+<h6 class="text-base font-semibold text-left capitalize">Sebagai -<span class=font-bold>Desainer header footer dan logo acara</span></h6>
+<h6 class="text-sm font-normal text-left mb-5">Desember 2021</h6>
+<p class="text-base font-normal text-beta mt-2">Acara tahunan alumni SMAN 1 Kedungwuni, dalam mempromosikan perguruan tinggi di Indonesia untuk adik-adik kelasnya yang akan menempuh dunia kuliah, agar memiliki informasi dan referensi tentang kampus-kampus di Indonesia.</p>
+<hr class="w-full h-1 mt-5 bg-charlie">
+</div>
+<div class="expo-kampus m-1 mt-5">
+<h1 class="text-xl font-bold text-left mt-6"><span class=font-medium>Part Time</span>- SMANDUNG 2021 Yearbook 📕</h1>
+<h6 class="text-base font-semibold text-left capitalize">Sebagai -<span class=font-bold>Desainer cover buku</span></h6>
+<h6 class="text-sm font-normal text-left mb-5">September 2020</h6>
+<p class="text-base font-normal text-beta mt-2">Saya ikut andil sebagai desainer cover sebuah buku tahunan yang selalu diterbitkan saat murid kelas 12 akan lulus. Berlangsung dari bulan September-Januari, mulai persiapan, pemotretan sampai pembagian buku.</p>
+<hr class="w-full h-1 mt-5 bg-charlie">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=portofolio class="pt-32 pb-32">
+<div class=container>
+<div class="flex flex-wrap">
+<div class="w-full px-5 lg:w-full text-center">
+<h4 class="font-bold text-2xl lg:text-5xl leading-6">Portfolio<span class=font-normal>Section</span>
+</h4>
+<div class="inline-flex items-center justify-center w-full">
+<hr class="w-64 h-1 my-8 bg-beta border-0 rounded">
+<div class="absolute px-4 -translate-x-1/2 bg-white dark:bg-gray-900 left-1/2"><svg aria-hidden=true class="w-5 h-5" viewBox="0 0 24 27" fill=none xmlns=http://www.w3.org/2000/svg>
+<path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill=currentColor />
+</svg></div>
+</div>
+<h3 class="font-bold text-l text-center mb-5">💡 Klik emoji untuk melihat projek.</h3>
+</div>
+<div class="mx-auto max-w-full lg:grid lg:grid-cols-3 lg:gap-6 lg:mt-12">
+<div class="bg-[#0F102B] dark:bg-[#00F0FF] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
+<a href=https://github.com/aautoruns/pahe_app/ target=_blank>
+<h1 class="text-4xl mt-10 ml-7">🍿</h1>
+</a>
+<div class="text-l m-10 font-light text-[#00F0FF] dark:text-[#0F102B]">
+<h1 class="text-2xl font-bold">Pahe+<span class=block>Movie Wiki</span></h1>
+<p class="text-xs font-medium mt-3">Aplikasi katalog film yang berisi berbagai informasi film yang sedang tayang di bioskop, dll.</p>
+</div>
+</div>
+<div class="bg-[#F8F8F8] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
+<a href=https://github.com/aautoruns/kopicalf/ target=_blank>
+<h1 class="text-4xl mt-10 ml-7">☕</h1>
+</a>
+<div class="text-l m-10 font-light tex</a>t-dark">
+<h1 class="text-2xl font-bold text-[#FF002E]">Kopi<span class=text-[#001AFF]>Calf</span>
+</h1>
+<p class="text-xs font-medium mt-3 dark:text-dark">Sebuah kedai minum di Jakarta yang menghadirkan kopi dan susu kalengan yang siap minum, dengan berbagai varian rasa, dan harga terjangkau.</p>
+</div>
+</div>
+<div class="bg-[#000080] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
+<a href=https://github.com/aautoruns/tugasakhir_webdesign/ target=_blank>
+<h1 class="text-4xl mt-10 ml-7">🎒</h1>
+</a>
+<div class="text-l m-10 text-white">
+<h1 class="text-2xl font-extrabold text-white">SMANDUNG Website</h1>
+<p class="text-xs font-medium mt-3">Hasil final tugas akhir lanjutan UI/UX matkul Web Design.</p>
+</div>
+</div>
+<div class="bg-[#BC0909] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
+<a href=https://github.com/aautoruns/anfstudio_crud target=_blank>
+<h1 class="text-4xl mt-10 ml-7">👕</h1>
+</a>
+<div class="text-l m-10 text-white">
+<h1 class="text-2xl font-extrabold text-white">ANF Studio</h1>
+<p class="text-xs font-medium mt-3">Rumah sablon kaos yang sangat kompeten di Kabupaten Batang, Jawa Tengah.</p>
+</div>
+</div>
+<div class="bg-[#FEA800] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
+<a href=https://www.instagram.com/p/ChALOGZvuFk/ target=_blank>
+<h1 class="text-4xl mt-10 ml-7">🖼️</h1>
+</a>
+<div class="text-l m-10 text-dark">
+<h1 class="text-2xl font-extrabold text-dark">Desain Vector</h1>
+<p class="text-xs font-medium mt-3">Desain vector yang mengambil referensi seorang karakter suatu film/series/game yang saya buat desain vectornya.</p>
+</div>
+</div>
+<div class="bg-[#000080] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
+<a href=https://dribbble.com/shots/20037207-SMANDUNG-Official-Website-Re-Design target=_blank>
+<h1 class="text-4xl mt-10 ml-7">🦅</h1>
+</a>
+<div class="text-l m-10 text-white">
+<h1 class="text-2xl font-extrabold text-white">SMANDUNG Website UI-UX</h1>
+<p class="text-xs font-medium mt-3">Desain UI/UX yang juga sebagai hasil tugas akhir mata kuliah Web Design kampus saya.</p>
+</div>
+</div>
+<div class="bg-[#FEA800] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
+<a href=https://www.instagram.com/stories/highlights/17897984605819174/ target=_blank>
+<h1 class="text-4xl mt-10 ml-7">🖋️</h1>
+</a>
+<div class="text-l m-10 text-dark">
+<h1 class="text-2xl font-extrabold text-dark">Typografi</h1>
+<p class="text-xs font-medium mt-3">Teknik melakukan penyusunan huruf dan teks di dalam suatu pembuatan visual agar dapat terbaca dan menarik</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=kontak class="lg:pt-36 pb-32">
+<div class=container>
+<div class="flex flex-wrap">
+<div class="self-center px-4 rounded-xl w-full h-full lg:max-w-xl lg:mx-auto">
+<div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
+<h2 class="mb-5 text-2xl font-bold">Kotak Bantuan 🆘</h2>
+<div class="grid border-t border-charlie">
+<div class=pt-8>
+<h3 class="flex items-center text-lg font-bold mb-1">🙋‍♀️ Bagaimana cara mengorder desain saya?</h3>
+<h3 class=font-semibold>Jawaban :</h3>
+<p class="text-normal text-justify">Banyak cara untuk mengkontak saya untuk melakukan ordering desain. Cara pertama, anda bisa chat langsung saya lewat email pribadi, Whats'App, DM Instagram, dan juga lewat form bantuan dilaman ini. Atau cara kedua yang cukup formal melalui platform freelance<span class="font-bold text-green-400"><a href=https://www.fiverr.com/galihazellaa>Fiverr</a></span>disana anda bisa memesan desain yang anda inginkan. Untuk pengiriman pemesanan saya biasanya memakai sharelink Google Drive.</p>
+</div>
+<div class=pt-8>
+<h3 class="flex items-center text-lg font-bold mb-1">🙋‍♀️ Pricelist dan metode pembayaran.</h3>
+<h3 class=font-semibold>Jawaban :</h3>
+<p class="text-normal text-justify">Untuk harga tergantung rumitnya jadi tidak menentu. Untuk dilayanan Fiverr saya mematok 5-15 Dollar per desain. Metode pembayaran bisa melalui transfer bank, atau melalui dompet digital seperti Paypal, OVO, DANA, Shopepay, dan Gopay.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="self-center px-4 rounded-xl w-full h-full lg:max-w-xl lg:mx-auto">
+<div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
+<h2 class="mb-5 text-2xl font-bold">Kirim Pesan Disini 📩</h2>
+<form target=_blank action=https://formsubmit.co/galihazellafirdaus@gmail.com method=POST>
+<input name=name id=name class="bg-gray-50 dark:bg-slate-800 mb-3 border border-charlie dark:border-black/50 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Masukan Nama">
+<div class="flex mb-3"><span class="inline-flex items-center px-3 text-sm bg-gray-50 dark:bg-slate-800 border border-r-0 border-gray-300 dark:border-black/50 rounded-l-md">@</span><input type=email name=email id=email class="rounded-none rounded-r-lg bg-gray-50 dark:bg-slate-800 border border-gray-300 dark:border-black/50 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="Masukan Email"></div><textarea id=message rows=12 class="block p-2.5 w-full text-sm bg-gray-50 dark:bg-slate-800 rounded-lg border border-charlie dark:border-black/50 focus:ring-blue-500 focus:border-blue-500" placeholder="Ketik pesanmu disini..."></textarea><button class="flex justify-center items-center mt-5 w-full h-12 rounded-lg bg-alpha font-semibold text-white transition duration-75 shadow-lg hover:bg-red-800">Kirimkan Pesan 📜</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-100 dark:bg-[#080E16] shadow px-6 py-8">
+<div class="w-full mb-5">
+<h5 class="font-bold text-sm text-center mb-4">Ikuti pula semua platform media sosial saya.</h5>
+<div class="flex justify-center"><a href=https://www.behance.net/galihazellaa/ target=_blank>
+<div class="flex items-center">
+<div class="w-11 h-11 bg-charlie dark:bg-slate-800 hover:bg-[#1769FF] dark:hover:bg-[#1769FF] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
+<svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-white w-5 h-5 mx-auto mt-3 items-center">
+<title>Behance</title>
+<path d="M0 4.4804V19.243h7.1554c.6613 0 1.3078-.0832 1.9297-.248.6288-.1654 1.1905-.4203 1.6792-.7661.485-.3431.8784-.788 1.1677-1.3369.2862-.542.4294-1.187.4294-1.9354 0-.9232-.219-1.7109-.6675-2.369-.446-.6542-1.1187-1.1139-2.0274-1.3746.6674-.3161 1.1658-.7227 1.506-1.2177.3371-.4967.5058-1.1174.5058-1.8607 0-.6873-.1127-1.2677-.3375-1.7318-.2306-.4709-.552-.8452-.9632-1.1266-.4176-.2808-.912-.4857-1.4912-.6085-.5827-.1261-1.22-.1872-1.9264-.1872zm15.6674.9903v1.4567h5.9844V5.4707zM3.2509 6.9947h3.0407c.2873 0 .5683.0204.8359.0731.2728.0466.508.134.716.2595.2096.1205.3754.293.501.5132.1208.2203.1806.5038.1806.8474 0 .6189-.1811 1.0702-.5551 1.3426-.3778.2775-.8543.4147-1.4304.4147H3.2509zm15.545 1.2564c-.819 0-1.5587.1462-2.2294.436-.6705.2904-1.2463.6875-1.7318 1.1915-.4846.5011-.8535 1.0986-1.12 1.7909-.2612.69-.3942 1.4366-.3942 2.236 0 .8268.1284 1.5891.3835 2.2786.258.6923.6198 1.2822 1.0856 1.781.478.4967 1.046.8784 1.726 1.1497.6806.269 1.4382.4048 2.2803.4048 1.208 0 2.2446-.2771 3.0949-.8326.8599-.5528 1.4902-1.471 1.9058-2.7574h-2.585c-.1.3307-.359.649-.784.9467-.4295.2988-.9417.4492-1.534.4492-.8233 0-1.4588-.2168-1.8985-.6462-.4412-.4294-.7267-1.2289-.7267-2.0742h7.713c.0552-.8291-.0122-1.6218-.2045-2.3797-.1938-.7601-.5033-1.4365-.9393-2.029-.4355-.5931-.9904-1.0667-1.667-1.4165-.6788-.3543-1.4703-.5288-2.3747-.5288zm-.0887 2.217c.7209 0 1.3126.2092 1.6612.5954.3503.389.6065.9432.6766 1.6915h-4.7766c.0136-.2085.058-.4444.1339-.7045.0749-.2668.2039-.5164.3933-.753.1905-.2326.4402-.431.744-.5896.3109-.1608.6986-.2397 1.1676-.2397zM3.251 12.664h3.5334c.6996 0 1.2682.1602 1.6948.4836.4259.328.6405.8685.6405 1.6292 0 .3885-.0632.7094-.1946.9566-.131.2495-.3106.4466-.528.5896-.2172.1491-.4753.2498-.7661.3137-.2862.0639-.5905.092-.9115.092H3.2509z"/>
+</svg>
+</div>
+</div>
+</a><a href=https://dribbble.com/autouruns target=_blank>
+<div class="flex items-center">
+<div class="w-11 h-11 bg-charlie dark:bg-slate-800 hover:bg-[#EA4C89] dark:hover:bg-[#EA4C89] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
+<svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-white w-5 h-5 mx-auto mt-3 items-center">
+<title>Dribbble</title>
+<path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/>
+</svg>
+</div>
+</div>
+</a><a href=https://github.com/aautoruns target=_blank>
+<div class="flex items-center">
+<div class="w-11 h-11 bg-charlie dark:bg-slate-800 hover:bg-[#181717] dark:hover:bg-[#181717] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
+<svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-white w-5 h-5 mx-auto mt-3 items-center">
+<title>GitHub</title>
+<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+</svg>
+</div>
+</div>
+</a><a href=https://instagram.com/aautoruns target=_blank>
+<div class="flex items-center">
+<div class="w-11 h-11 bg-charlie dark:bg-slate-800 hover:bg-[#302683] dark:hover:bg-[#302683] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
+<svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-white w-5 h-5 mx-auto mt-3 items-center">
+<title>Instagram</title>
+<path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+</svg>
+</div>
+</div>
+</a><a href="https://open.spotify.com/user/o3f5ldym4o8xxjg4wa284iz3q?si=9Yi8wXXjTeCN-M-Jqobb0g&utm_source=copy-link" target=_blank>
+<div class="flex items-center">
+<div class="w-11 h-11 bg-charlie dark:bg-slate-800 hover:bg-[#1DB954] dark:hover:bg-[#1DB954] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
+<svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-white w-5 h-5 mx-auto mt-3 items-center">
+<title>Spotify</title>
+<path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+</svg>
+</div>
+</div>
+</a><a href="https://open.spotify.com/user/o3f5ldym4o8xxjg4wa284iz3q?si=9Yi8wXXjTeCN-M-Jqobb0g&utm_source=copy-link" target=_blank>
+<div class="flex items-center">
+<div class="w-11 h-11 bg-charlie dark:bg-slate-800 hover:bg-[#252525] dark:hover:bg-[#000000] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
+<svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-white w-5 h-5 mx-auto mt-3 items-center">
+<title>TikTok</title>
+<path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+</svg>
+</div>
+</div>
+</a></div>
+</div>
+<h5 class="font-bold text-sm text-center">&copy; Copyright<span id=year></span><a href=http://galihazellaa.vercel.app/ class=hover:underline>Galih Azella Firdaus</a>. All Rights Reserved.</h5>
+<p class="flex justify-center font-normal text-sm text-center"><a href=https://tailwindcss.com/ >Made with<span class=font-bold>Tailwind CSS</span></a><span><svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-sky-400 w-5 h-5 mx-2">
+<title>Tailwind CSS</title>
+<path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+</svg></span></p>
+</footer><a href=#home id=top class="hidden fixed bottom-5 right-5 rounded-xl grayscale hover:grayscale-0 bg-charlie hover:bg-white shadow-lg p-2 uppercase leading-normal transition duration-150 ease-in-out hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg"><img src=https://cdn-icons-png.flaticon.com/512/2808/2808463.png alt=back-to-top class="w-8 h-8 mx-auto"></a>
+<script src=dist/js/script.js></script>
+<script src=node_modules/flowbite/plugin.js></script>
 </body>
-
 </html>
