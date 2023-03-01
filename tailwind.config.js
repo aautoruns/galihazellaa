@@ -11,7 +11,7 @@ module.exports = {
         alpha: '#B0233C',
         beta: '#808080',
         charlie: '#d1d5db',
-        dark: '#0F172A',
+        dark: '#010101',
       },
       screens: {
         '2xl': '1320px',
