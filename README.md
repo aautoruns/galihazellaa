@@ -1,4 +1,4 @@
-# Galih Azella Firdaus 🍃 ![Language](https://img.shields.io/github/languages/top/aautoruns/galihazellaa?color=orange&logo=html5&logoColor=white&style=flat-square)
+# Galih Azella Firdaus Portfolio ![Language](https://img.shields.io/github/languages/top/aautoruns/galihazellaa?color=orange&logo=html5&logoColor=white&style=flat-square)
 
 ### Everything I've done so far, is here!
 
@@ -8,8 +8,11 @@ To view the demo:
 <a href="https://galihazellaa.vercel.app/">
     <img src="https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel&logoColor=white" target="_blank">
 </a>
-<a href="https://aautoruns.github.io/portfolio/">
-    <img src="https://img.shields.io/badge/Github%20Pages-0D1117?style=for-the-badge&logo=github&logoColor=white" target="_blank">
+
+## See the UI Design 🕸️
+
+<a href="https://www.figma.com/file/sVb2WPlCXnA0lTghMJmWhP/Tailwind-Portfolio?t=vP5GI071PAcaw9Qt-1">
+    <img src="https://img.shields.io/badge/Figma%20UI%20Design-161616?style=for-the-badge&logo=figma&logoColor=white" target="_blank">
 </a>
 
 ## Technologies used in the project 💻
@@ -35,10 +38,24 @@ $ cd galihazellaa
 $ git remote remove origin
 ```
 
+After that, install the Node.Js module
+
+```bash
+# Install Tailwind Module
+$ npm install -D tailwindcss
+
+# Install Typed Module
+$ npm install typed.js
+
+# Install Flowbites Module
+$ npm i flowbite
+
+```
+
 Then in your text editor click `Run` to see the portfolio locally. It should look like the below screenshot.
 
 <h2 align="center">
-  <img src="https://user-images.githubusercontent.com/96577430/221632947-89f90048-e258-4033-9e3b-3ca01bf70115.png" alt="portfolio_demo" width="80%">
+  <img src="https://user-images.githubusercontent.com/96577430/222501935-f95ec3b6-9e27-464b-b5a1-13fd2a559811.gif" alt="portfolio_demo" width="80%">
 </h2>
 
 ---
