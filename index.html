@@ -17,11 +17,12 @@
     <script src=https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js
         integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
         crossorigin=anonymous referrerpolicy=no-referrer></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@{{< current_version >}}/dist/flowbite.min.css" />
     <!-- CSS -->
     <link href=/dist/css/style.css rel=stylesheet>
 </head>
 
-<body class="dark:bg-gray-900 dark:text-charlie">
+<body class="dark:bg-gray-900 dark:text-charlie transition duration-100">
     <!-- Header -->
     <header class="bg-transparent dark:bg-gray-900 absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
@@ -33,10 +34,10 @@
                             class="hamburger-line dark:bg-white transition duration-300 ease-in-out"></span><span
                             class="hamburger-line dark:bg-white transition duration-300 ease-in-out origin-bottom-left"></span></button>
                     <div class="flex mr-10 order-2">
-                        <button id=theme-toggle type=button
-                            class="text-white flex bg-slate-800 dark:text-yellow-400 hover:bg-[#080E16] dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-600 dark:focus:ring-blue-600 rounded-full p-2.5"><svg
-                                id=theme-toggle-dark-icon class="w-5 h-5 hidden" fill=currentColor
-                                viewBox="0 0 20 20" xmlns=http://www.w3.org/2000/svg>
+                        <div id=theme-toggle type=button
+                            class="text-white flex bg-slate-800 dark:text-yellow-400 hover:bg-[#080E16] dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-600 dark:focus:ring-blue-600 rounded-full p-2.5">
+                            <svg id=theme-toggle-dark-icon class="w-5 h-5 hidden" fill=currentColor viewBox="0 0 20 20"
+                                xmlns=http://www.w3.org/2000/svg>
                                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                             </svg>
                             <svg id=theme-toggle-light-icon class="w-5 h-5 hidden" fill=currentColor viewBox="0 0 20 20"
@@ -46,12 +47,12 @@
                                     fill-rule=evenodd clip-rule=evenodd>
                                 </path>
                             </svg><span class="hidden">Toggle Mode</span>
-                        </button>
+                        </div>
                     </div>
                     <nav id=nav-menu
                         class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white dark:bg-slate-900 dark:backdrop-filter dark:backdrop-blur-2xl dark:bg-opacity-90 bg-clip-padding py-5 border border-slate-200 dark:border-slate-800 lg:border-none lg:border-slate-50 shadow lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
                         <ul class="block px-5 top lg:flex">
-                            <li><a href=#home class="block py-2 px-4 hover:font-bold">🏡 Home</a></li>
+                            <li><a href=#home class="block py-2 px-4 hover:font-bold">🛖 Beranda</a></li>
                             <li><a href=#resume class="block py-2 px-4 hover:font-bold">✨ Mini Resume</a></li>
                             <li><a href=#portofolio class="block py-2 px-4 hover:font-bold">📌 Portofolio</a></li>
                             <li
@@ -74,7 +75,8 @@
                     <h1 class="text-base font-bold text-alpha mt-1 md:text-xl">Haloo 👋 saya<span
                             class="block text-dark dark:text-white text-3xl mb-2 lg:text-5xl">Galih Azella
                             Firdaus</span></h1>
-                    <h2 class=lg:text-lg>Saya seorang <span class="text-beta font-semibold" id=typed></span></h2>
+                    <h2 class=lg:text-lg>Saya seorang <span class="text-beta dark:text-white font-semibold"
+                            id=typed></span></h2>
                     <p class="mb-8 lg:text-lg">Selamat datang di <span class=font-bold>web portofolio </span>saya ✨
                     </p>
                     <a href=#kontak
@@ -82,7 +84,7 @@
                         bantuan? 🆘</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:right-0 lg:mt-9">
+                    <div class="relative mt-10 lg:right-0 mb-10">
                         <img src=dist/img/assets/hero.webp class="mx-auto" width="400px" height="400px" alt=me>
                         <span
                             class="absolute bottom-0 -z-10 -top-5 lg:top-10 left-1/2 -translate-x-1/2 md:scale-125"><svg
@@ -105,15 +107,16 @@
             <div class="flex flex-wrap">
                 <div class="w-full px-5 mb-10 lg:w-1/3">
                     <h4 class="font-bold mb-3 text-2xl text-center">Mini Resume 📄</h4>
-                    <img src="dist/img/assets/fotoku 1.svg" alt=me class="mx-auto w-52 h-52 my-6">
+                    <img src="dist/img/assets/fotoku 1.svg" width="200px" height="200px" alt=me
+                        class="bg-charlie rounded-full mx-auto w-50 h-50 my-6">
                     <div class="font-bold mb-3 max-w-md leading-relaxed text-center">
                         <h1 class="font-bold text-xl">Galih Azella Firdaus</h1>
                     </div>
-                    <p class="font-medium text-base text-beta  max-w-xl lg:text-l">Saya suka hal-hal yang
+                    <p class="font-medium text-center my-3 dark:text-charlie  max-w-xl lg:text-l">Saya suka hal-hal yang
                         berbau kreatif, seperti menggambar, mengedit foto/video, mendesain UI-UX, dll.</p>
                     <div class=container>
                         <div class="flex flex-wrap">
-                            <div class="flex flex-wrap w-full mt-5 justify-center">
+                            <div class="flex flex-wrap w-full my-5 justify-center">
                                 <div class="bg-[#1DBF73] rounded-full w-10 h-10 mx-2"><a
                                         href=https://www.fiverr.com/galihazellaa target=_blank
                                         class="w-10 h-10 flex justify-center items-center"><svg role=img
@@ -170,31 +173,33 @@
                             <hr class="w-full h-1 bg-dark">
                             <hr class="w-full h-1 bg-dark">
                             <h1 class="text-xl font-bold text-left mt-6">STMIK Widya Pratama Pekalongan🧑‍💻</h1>
-                            <h6 class="text-sm font-normal text-left mb-5">Oktober 2021 - Sekarang</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Jl. Patriot No.25, Dukuh, Kec.
+                            <h6 class="text-sm font-semibold text-left mb-5">Oktober 2021 - Sekarang</h6>
+                            <p class="text-sm font-light text-left mb-5">Jl. Patriot No.25, Dukuh, Kec.
                                 Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51146.</p>
-                            <hr class="w-full h-1 bg-charlie">
+                            <hr class="w-full h-1 bg-beta">
                         </div>
                         <div class=sma>
                             <h1 class="text-xl font-bold text-left mt-6">SMAN 1 Kedungwuni 👨‍🎓</h1>
-                            <h6 class="text-sm font-normal text-left mb-5">Juli 2018 - Juni 2021</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Sopaten, Kedungwuni Barat, Kec.
+                            <h6 class="text-sm font-semibold text-left mb-5">Juli 2018 - Juni 2021</h6>
+                            <p class="text-sm font-light text-left mb-5">Sopaten, Kedungwuni Barat, Kec.
                                 Kedungwuni, Kabupaten Pekalongan, Jawa Tengah 51173.</p>
-                            <hr class="w-full h-1 bg-charlie">
+                            <hr class="w-full h-1 bg-beta">
                         </div>
                         <div class=sd>
                             <h1 class="text-xl font-bold text-left mt-6">SMPN 2 Kedungwuni 👨‍🎓</h1>
-                            <h6 class="text-sm font-normal text-left mb-5">Juli 2016 - Juli 2018</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Jl. Bebekan, Kedungwuni Barat, Kec.
+                            <h6 class="text-sm font-semibold text-left mb-5">Juli 2016 - Juli 2018</h6>
+                            <p class="text-sm font-light text-left mb-5">Jl. Bebekan, Kedungwuni Barat,
+                                Kec.
                                 Kedungwuni, Kab. Pekalongan, Jawa Tengah, dengan kode pos 51173.</p>
-                            <hr class="w-full h-1 bg-charlie">
+                            <hr class="w-full h-1 bg-beta">
                         </div>
                         <div class="sd mb-5">
                             <h1 class="text-xl font-bold text-left mt-6">SDN 06 Kedungwuni 👨‍🎓</h1>
-                            <h6 class="text-sm font-normal text-left mb-5">Juli 2009 - Juli 2016</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Gembong Timur, Kedungwuni Tim., Kec.
+                            <h6 class="text-sm font-semibold text-left mb-5">Juli 2009 - Juli 2016</h6>
+                            <p class="text-sm font-light text-left mb-5">Gembong Timur, Kedungwuni Tim.,
+                                Kec.
                                 Kedungwuni, Kab. Pekalongan, Jawa Tengah 51173.</p>
-                            <hr class="w-full h-1 bg-charlie">
+                            <hr class="w-full h-1 bg-beta">
                         </div>
                     </div>
                 </div>
@@ -203,108 +208,93 @@
                             <hr class="w-full h-1 bg-dark">
                             <hr class="w-full h-1 bg-dark">
                             <h1 class="text-xl font-bold text-left mt-6">WPiTV 🎥</h1>
-                            <h6 class="text-sm font-normal text-left mb-5">September 2021 - Sekarang</h6>
-                            <p class="text-sm font-normal text-beta text-left mb-5">Jl. Patriot No.25, Dukuh, Kec.
-                                Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51146.</p>
-                            <hr class="w-full h-1 bg-charlie">
+                            <h6 class="text-sm font-semibold text-left">Anggota TV Club 10</h6>
+                            <h6 class="text-sm font-semibold text-left mb-5">September 2021 - Sekarang</h6>
+                            <ul class="list-disc list-inside text-sm font-light text-left mb-5">
+                                <li class="mb-1">Memproduksi salah satu episode Solusi Pintar, sebagai Produser acara
+                                </li>
+                                <li class="mb-1">Melakukan jobdesk sebagai cameraman, untuk program acara Open Talkie,
+                                    dan Ngopot.</li>
+                                <li class="mb-1">Mendesain dan mengelola poster episode program Open Talkie.</li>
+                                <li class="mb-1">Menjadi assisten mentoring materi kamera.</li>
+                            </ul>
+                            <p class="text-sm font-light text-left mb-5"></p>
+                            <hr class="w-full h-1 bg-beta">
                         </div>
                     </div>
-                    <div class="text-2xl font-bold">Ketrampilan
+                    <div class="text-2xl font-bold">Hard Skill
                         <hr class="w-full h-1 bg-dark">
                         <hr class="w-full h-1 bg-dark">
-                        <div class="gap-8 mt-5 sm:grid sm:grid-cols-2">
-                            <div>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">Frontend</dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:70%></div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">Backend</dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:40%></div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">UI / UX</dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:80%></div>
-                                        </div>
-                                    </dd>
-                                </dl>
+                        <div class="hardskill my-5">
+                            <div class="flex items-center justify-start space-x-3">
+                                <div class="flex items-center divide-x-2 divide-beta">
+                                    <h4 class="text-base pr-3 font-semibold dark:text-charlie">Frontend
+                                        Developing</h4>
+                                    <h4 class="text-base pl-3 font-light dark:text-charlie">Intermediate
+                                    </h4>
+                                </div>
                             </div>
-                            <div>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">Figma</dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:84%></div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt class="text-sm font-bold mb-3">Adobe Creative Suite</dt>
-                                    <dd class="flex items-center mb-3">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:70%></div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl class=mb-5>
-                                    <dt class="text-sm font-bold mb-3">IOT</dt>
-                                    <dd class="flex items-center">
-                                        <div class="w-full bg-transparant rounded h-2.5mr-2">
-                                            <div class="bg-charlie dark:bg-alpha h-2.5 rounded" style=width:83%></div>
-                                        </div>
-                                    </dd>
-                                </dl>
+                            <div class="flex items-center justify-start space-x-3">
+                                <div class="flex items-center divide-x-2 divide-beta">
+                                    <h4 class="text-base pr-3 font-semibold dark:text-charlie">Backend
+                                        Developing</h4>
+                                    <h4 class="text-base pl-3 font-light dark:text-charlie">Beginner</h4>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-start space-x-3">
+                                <div class="flex items-center divide-x-2 divide-beta">
+                                    <h4 class="text-base pr-3 font-semibold dark:text-charlie">UI-UX
+                                        Design</h4>
+                                    <h4 class="text-base pl-3 font-light dark:text-charlie">Intermediate
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-start space-x-3">
+                                <div class="flex items-center divide-x-2 divide-beta">
+                                    <h4 class="text-base pr-3 font-semibold dark:text-charlie">Photo &
+                                        Video Editing</h4>
+                                    <h4 class="text-base pl-3 font-light dark:text-charlie">Expert</h4>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-start space-x-3">
+                                <div class="flex items-center divide-x-2 divide-beta">
+                                    <h4 class="text-base pr-3 font-semibold dark:text-charlie">Digital
+                                        Drawing</h4>
+                                    <h4 class="text-base pl-3 font-light dark:text-charlie">Advanced</h4>
+                                </div>
                             </div>
                         </div>
-                        <hr class="w-full h-1 bg-charlie">
-                        <div class="text-2xl mt-10 font-bold">Minat
+
+
+                        <hr class="w-full h-1 bg-beta">
+                        <div class="text-2xl my-10 font-bold">Soft Skill
                             <hr class="w-full h-1 bg-dark">
                             <hr class="w-full h-1 bg-dark">
-                            <div class="interest mt-5">
+                            <div class="softskill my-5">
                                 <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Seni
-                                    Digital
+                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Kreatif
                                 </button>
                                 <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">UI-Design</button>
+                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Teliti
+                                    dan mendetail</button>
                                 <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Tailwind
-                                    CSS
+                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Rapih
                                 </button>
                                 <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Flutter
+                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Eyecatching
                                 </button>
-                                <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Pop
-                                    Culture</button>
-                                <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Western
-                                    Music</button>
-                                <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Film
-                                    & Series</button>
-                                <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Fotografi</button>
-                                <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Web
-                                    Design</button>
                                 <button type=button
                                     class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Typografi</button>
                                 <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Meme</button>
+                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Pemilihan
+                                    Warna</button>
                                 <button type=button
-                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Cappuchino</button>
-                                <hr class="w-full h-1 mt-5 bg-charlie">
+                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Kontras</button>
+                                <button type=button
+                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Teamwork</button>
+                                <button type=button
+                                    class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Flexible</button>
+                                <hr class="w-full h-1 mt-5 bg-beta">
                             </div>
                         </div>
                     </div>
@@ -319,10 +309,10 @@
                                 class=font-bold>Desainer
                                 grafis dan tim IT</span></h6>
                         <h6 class="text-sm font-normal text-left mb-5">November 2022 - Desember 2023</h6>
-                        <p class="text-base font-normal text-beta mt-2">Lingkar Kajian Kota Pekalongan adalah lembaga
+                        <p class="text-base font-normal dark:text-charlie mt-2">Lingkar Kajian Kota Pekalongan adalah lembaga
                             riset dan advokasi terdaftar yang berkomitmen untuk mengembangkan iklim dan budaya ilmiah
                             secara kreatif dan kritis di Kota Pekalongan.</p>
-                        <hr class="w-full h-1 mt-5 bg-charlie">
+                        <hr class="w-full h-1 mt-5 bg-beta">
                     </div>
                     <div class="expo-kampus m-1 mt-5">
                         <h1 class="text-xl font-bold text-left mt-6"><span class=font-medium>Part Time - </span>Expo
@@ -331,10 +321,10 @@
                                 class=font-bold>Desainer
                                 header footer dan logo acara</span></h6>
                         <h6 class="text-sm font-normal text-left mb-5">Desember 2021</h6>
-                        <p class="text-base font-normal text-beta mt-2">Acara tahunan alumni SMAN 1 Kedungwuni, dalam
+                        <p class="text-base font-normal dark:text-charlie mt-2">Acara tahunan alumni SMAN 1 Kedungwuni, dalam
                             mempromosikan perguruan tinggi di Indonesia untuk adik-adik kelasnya yang akan menempuh
                             dunia kuliah, agar memiliki informasi dan referensi tentang kampus-kampus di Indonesia.</p>
-                        <hr class="w-full h-1 mt-5 bg-charlie">
+                        <hr class="w-full h-1 mt-5 bg-beta">
                     </div>
                     <div class="expo-kampus m-1 mt-5">
                         <h1 class="text-xl font-bold text-left mt-6"><span class=font-medium>Part Time - </span>SMANDUNG
@@ -343,10 +333,10 @@
                                 class=font-bold>Desainer
                                 cover buku</span></h6>
                         <h6 class="text-sm font-normal text-left mb-5">September 2020</h6>
-                        <p class="text-base font-normal text-beta mt-2">Saya ikut andil sebagai desainer cover sebuah
+                        <p class="text-base font-normal dark:text-charlie mt-2">Saya ikut andil sebagai desainer cover sebuah
                             buku tahunan yang selalu diterbitkan saat murid kelas 12 akan lulus. Berlangsung dari bulan
                             September-Januari, mulai persiapan, pemotretan sampai pembagian buku.</p>
-                        <hr class="w-full h-1 mt-5 bg-charlie">
+                        <hr class="w-full h-1 mt-5 bg-beta">
                     </div>
                 </div>
             </div>
@@ -361,7 +351,7 @@
                 <div class="w-full px-5 lg:w-full text-center">
                     <h4 class="font-bold text-2xl lg:text-5xl leading-6">Portfolio <span
                             class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-alpha relative inline-block">
-                            <span class="relative text-white">Section</span>
+                            <span class="relative font-medium text-white">Section</span>
                         </span>
                     </h4>
                     <div class="inline-flex items-center justify-center w-full">
@@ -473,8 +463,7 @@
                             <div class=pt-8>
                                 <h3 class="flex items-center text-lg font-bold mb-1">🙋‍♀️ Bagaimana cara mengorder
                                     desain saya?</h3>
-                                <h3 class="font-semibold dark:text-alpha">Jawaban :</h3>
-                                <p class="text-normal ">Banyak cara untuk mengkontak saya untuk melakukan
+                                <p class="text-normal text-justify">Banyak cara untuk mengkontak saya untuk melakukan
                                     ordering desain. Cara pertama, anda bisa chat langsung saya lewat email pribadi,
                                     WhatsApp, DM Instagram, dan juga lewat form bantuan dilaman ini. Atau cara kedua
                                     yang cukup formal melalui platform freelance
@@ -488,8 +477,7 @@
                             <div class=pt-8>
                                 <h3 class="flex items-center text-lg font-bold mb-1">🙋‍♀️ Pricelist dan metode
                                     pembayaran.</h3>
-                                <h3 class="font-semibold dark:text-alpha">Jawaban :</h3>
-                                <p class="text-normal ">Untuk harga tergantung rumitnya jadi tidak menentu.
+                                <p class="text-normal text-justify">Untuk harga tergantung rumitnya jadi tidak menentu.
                                     Untuk dilayanan Fiverr saya mematok 5-15 Dollar per desain. Metode pembayaran bisa
                                     melalui transfer bank, atau melalui dompet digital seperti Paypal, OVO, DANA,
                                     Shopeepay, dan Gopay.
@@ -504,20 +492,19 @@
                         <form target=_blank action=https://formsubmit.co/galihazellafirdaus@gmail.com method=POST>
                             <input name=name id=name
                                 class="bg-gray-50 dark:bg-slate-800 mb-3 border border-charlie dark:border-black/50 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                                placeholder="Masukan nama">
+                                placeholder="Nama">
                             <div class="flex mb-3">
                                 <span
                                     class="inline-flex items-center px-3 text-sm bg-gray-50 dark:bg-slate-800 border border-r-0 border-gray-300 dark:border-black/50 rounded-l-md">@</span>
                                 <input type=email name=email id=email
                                     class="rounded-none rounded-r-lg bg-gray-50 dark:bg-slate-800 border border-gray-300 dark:border-black/50 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5"
-                                    placeholder="Masukan email">
+                                    placeholder="Email">
                             </div>
-                            <textarea id=message name="message" rows=12
-                                class="block p-2.5 w-full text-sm bg-gray-50 dark:bg-slate-800 rounded-lg border border-charlie dark:border-black/50 focus:ring-blue-500 focus:border-blue-500"
-                                placeholder="Ketik pesanmu disini..">
-                            </textarea>
+                            <textarea id="message" rows="10"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-800 dark:border-black/50 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Tulis Pesanmu Disini..."></textarea>
                             <button
-                                class="flex justify-center items-center mt-5 w-full h-12 rounded-lg bg-alpha font-semibold text-white transition duration-75 shadow-lg hover:bg-red-800">Kirimkan
+                                class="flex justify-center items-center mt-5 w-full h-12 rounded-lg bg-alpha font-semibold text-white transition duration-75 shadow-lg hover:bg-red-800">Kirim
                                 Pesan 📜
                             </button>
                         </form>
@@ -619,8 +606,10 @@
             Reserved.
         </h5>
         <p class="flex justify-center font-normal text-sm text-center"><a href=https://tailwindcss.com>Made with <span
-                    class=font-bold>Tailwind CSS</span></a><span><svg role=img viewBox="0 0 24 24"
-                    xmlns=http://www.w3.org/2000/svg class="fill-sky-400 w-5 h-5 mx-2">
+                    class=font-bold>Tailwind CSS</span>
+            </a>
+            <span>
+                <svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-sky-400 w-5 h-5 mx-2">
                     <title>Tailwind CSS</title>
                     <path
                         d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
@@ -630,17 +619,6 @@
     </footer>
     <!-- Akhir Footer -->
 
-    <!-- Share Button -->
-    <div class='fixed bottom-5 right-10'>
-        <button
-            class='a2a_kit a2a_kit_size_32 a2a_default_style block px-10 py-2 tracking-wide rounded-full focus:outline-none'>
-            <a class="lg:mx-2 a2a_dd" href="https://www.addtoany.com/share"></a>
-            <a class="lg:mx-2 a2a_button_email"></a>
-            <a class="lg:mx-2 a2a_button_copy_link"></a>
-        </button>
-    </div>
-    <!-- End Share Button -->
-
     <!-- Back to Top -->
     <a href=#home id=to-top
         class="hidden fixed bottom-5 right-5 rounded-xl grayscale hover:grayscale-0 bg-charlie hover:bg-white shadow-lg p-2 uppercase leading-normal transition duration-150 ease-in-out hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg"><img
@@ -649,9 +627,9 @@
     <!-- End Back to Top -->
 
     <!-- JS -->
-    <script async src="https://static.addtoany.com/menu/page.js"></script>
     <script src=dist/js/script.js></script>
     <script src=node_modules/flowbite/plugin.js></script>
+    <script src="https://unpkg.com/flowbite@{{< current_version >}}/dist/flowbite.js"></script>
 
 </body>
 
