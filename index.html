@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang=en class=scroll-smooth>
+<html lang=id class=scroll-smooth>
 
 <head>
     <meta charset=UTF-8>
@@ -9,10 +9,10 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href=dist/img/favicon.png class="rounded-full" type=image/x-icon>
     <!-- Fonts -->
-    <link rel=preconnect href=https://fonts.googleapis.com>
-    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap"
-        rel=stylesheet>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- Vendor -->
     <script src=https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js
         integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
@@ -34,9 +34,9 @@
                             class="hamburger-line dark:bg-white transition duration-300 ease-in-out origin-bottom-left"></span></button>
                     <div class="flex mr-10 order-2">
                         <button id=theme-toggle type=button
-                            class="text-gray-400 bg-slate-800 dark:text-yellow-400 hover:bg-[#080E16] dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-full text-sm p-2.5"><svg
-                                id=theme-toggle-dark-icon class="w-5 h-5 hidden" fill=currentColor viewBox="0 0 20 20"
-                                xmlns=http://www.w3.org/2000/svg>
+                            class="text-white flex bg-slate-800 dark:text-yellow-400 hover:bg-[#080E16] dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-600 dark:focus:ring-blue-600 rounded-full p-2.5"><svg
+                                id=theme-toggle-dark-icon class="w-full h-5 hidden" fill=currentColor
+                                viewBox="0 0 20 20" xmlns=http://www.w3.org/2000/svg>
                                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                             </svg>
                             <svg id=theme-toggle-light-icon class="w-5 h-5 hidden" fill=currentColor viewBox="0 0 20 20"
@@ -45,7 +45,7 @@
                                     d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
                                     fill-rule=evenodd clip-rule=evenodd>
                                 </path>
-                            </svg>
+                            </svg><span class="hidden">Toggle Mode</span>
                         </button>
                     </div>
                     <nav id=nav-menu
@@ -76,13 +76,15 @@
                             Firdaus</span></h1>
                     <h2 class=lg:text-lg>Saya seorang <span class="text-beta font-semibold" id=typed></span></h2>
                     <p class="mb-8 lg:text-lg">Selamat datang di <span class=font-bold>web portofolio </span>saya ✨
-                    </p><a href=#kontak
+                    </p>
+                    <a href=#kontak
                         class="text-base font-semibold text-white bg-alpha py-3 px-5 rounded-lg hover:shadow-lg hover:bg-red-600 transition duration-300 ease-in-out">Butuh
                         bantuan? 🆘</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:right-0 lg:mt-9"><img src=dist/img/assets/hero.webp
-                            class="max-w-full mx-auto" alt=me><span
+                    <div class="relative mt-10 lg:right-0 lg:mt-9">
+                        <img src=dist/img/assets/hero.webp class="mx-auto" width="400px" height="400px" alt=me>
+                        <span
                             class="absolute bottom-0 -z-10 -top-5 lg:top-10 left-1/2 -translate-x-1/2 md:scale-125"><svg
                                 width=350 height=350 viewBox="0 0 200 200" xmlns=http://www.w3.org/2000/svg>
                                 <path fill=#B0233C
@@ -102,12 +104,12 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-5 mb-10 lg:w-1/3">
-                    <h4 class="font-bold mb-3 text-2xl text-center">Mini Resume & CV 📄</h4><img
-                        src=dist/img/assets/fotoku.webp alt=me class="bg-charlie rounded-full mx-auto w-52 h-52 my-6">
+                    <h4 class="font-bold mb-3 text-2xl text-center">Mini Resume 📄</h4>
+                    <img src="dist/img/assets/fotoku 1.svg" alt=me class="mx-auto w-52 h-52 my-6">
                     <div class="font-bold mb-3 max-w-md leading-relaxed text-center">
                         <h1 class="font-bold text-xl">Galih Azella Firdaus</h1>
                     </div>
-                    <p class="font-medium text-base text-beta text-justify max-w-xl lg:text-l">Saya suka hal-hal yang
+                    <p class="font-medium text-base text-beta  max-w-xl lg:text-l">Saya suka hal-hal yang
                         berbau kreatif, seperti menggambar, mengedit foto/video, mendesain UI-UX, dll.</p>
                     <div class=container>
                         <div class="flex flex-wrap">
@@ -129,11 +131,11 @@
                                             <path
                                                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                         </svg></a></div>
-                                <div class="bg-white shadow border border-charlie rounded-full w-10 h-10 mx-2">
+                                <div class="bg-white shadow border border-charlie rounded-full mx-2">
                                     <a href="https://glints.com/sg/profile/public/2418ba54-e02c-4878-9aba-a9c0510e32e3"
                                         target=_blank class="w-10 h-10 flex justify-center items-center">
                                         <div>
-                                            <img src="dist/img/assets/glints.webp" class="scale-50 m-auto">
+                                            <img src="dist/img/assets/glints.webp" class="m-auto w-5 h-5" alt="Glints">
                                         </div>
                                     </a>
                                 </div>
@@ -307,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-2xl px-5 mt-10 lg:mt-0 font-bold text-justify">Pengalaman Kerja 💪
+                <div class="text-2xl px-5 mt-10 lg:mt-0 font-bold">Pengalaman Kerja 💪
                     <hr class="w-full h-1 bg-dark">
                     <hr class="w-full h-1 bg-dark">
                     <div class="lkkp m-1 mt-5">
@@ -472,7 +474,7 @@
                                 <h3 class="flex items-center text-lg font-bold mb-1">🙋‍♀️ Bagaimana cara mengorder
                                     desain saya?</h3>
                                 <h3 class="font-semibold dark:text-alpha">Jawaban :</h3>
-                                <p class="text-normal text-justify">Banyak cara untuk mengkontak saya untuk melakukan
+                                <p class="text-normal ">Banyak cara untuk mengkontak saya untuk melakukan
                                     ordering desain. Cara pertama, anda bisa chat langsung saya lewat email pribadi,
                                     WhatsApp, DM Instagram, dan juga lewat form bantuan dilaman ini. Atau cara kedua
                                     yang cukup formal melalui platform freelance
@@ -487,10 +489,10 @@
                                 <h3 class="flex items-center text-lg font-bold mb-1">🙋‍♀️ Pricelist dan metode
                                     pembayaran.</h3>
                                 <h3 class="font-semibold dark:text-alpha">Jawaban :</h3>
-                                <p class="text-normal text-justify">Untuk harga tergantung rumitnya jadi tidak menentu.
+                                <p class="text-normal ">Untuk harga tergantung rumitnya jadi tidak menentu.
                                     Untuk dilayanan Fiverr saya mematok 5-15 Dollar per desain. Metode pembayaran bisa
                                     melalui transfer bank, atau melalui dompet digital seperti Paypal, OVO, DANA,
-                                    Shopepay, dan Gopay.
+                                    Shopeepay, dan Gopay.
                                 </p>
                             </div>
                         </div>
@@ -597,8 +599,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://open.spotify.com/user/o3f5ldym4o8xxjg4wa284iz3q?si=9Yi8wXXjTeCN-M-Jqobb0g&utm_source=copy-link"
-                    target=_blank>
+                <a href="http://tiktok.com/@andrew_garfeild" target=_blank>
                     <div class="flex items-center">
                         <div
                             class="w-11 h-11 bg-beta dark:bg-slate-800 hover:bg-[#252525] dark:hover:bg-[#000000] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
@@ -643,7 +644,7 @@
     <!-- Back to Top -->
     <a href=#home id=to-top
         class="hidden fixed bottom-5 right-5 rounded-xl grayscale hover:grayscale-0 bg-charlie hover:bg-white shadow-lg p-2 uppercase leading-normal transition duration-150 ease-in-out hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg"><img
-            src=https://cdn-icons-png.flaticon.com/512/2808/2808463.png alt=back-to-top class="w-8 h-8 mx-auto">
+            src="dist/img/assets/totop.webp" width="30px" height="30px" alt=back-to-top class="mx-auto">
     </a>
     <!-- End Back to Top -->
 
@@ -651,6 +652,7 @@
     <script async src="https://static.addtoany.com/menu/page.js"></script>
     <script src=dist/js/script.js></script>
     <script src=node_modules/flowbite/plugin.js></script>
+
 </body>
 
 </html>
