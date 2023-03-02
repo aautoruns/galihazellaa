@@ -870,6 +870,10 @@ input[type="range"]::-ms-fill-lower {
   }
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -918,6 +922,82 @@ input[type="range"]::-ms-fill-lower {
   top: 100%;
 }
 
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-11 {
+  bottom: 2.75rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-1\.5 {
+  right: 0.375rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.left-12 {
+  left: 3rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
+.left-32 {
+  left: 8rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.bottom-7 {
+  bottom: 1.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -928,6 +1008,10 @@ input[type="range"]::-ms-fill-lower {
 
 .order-2 {
   order: 2;
+}
+
+.float-right {
+  float: right;
 }
 
 .m-1 {
@@ -965,6 +1049,21 @@ input[type="range"]::-ms-fill-lower {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mb-1 {
@@ -1043,6 +1142,26 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 1.5rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-12 {
+  margin-right: 3rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1111,6 +1230,34 @@ input[type="range"]::-ms-fill-lower {
   height: 100%;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1141,6 +1288,18 @@ input[type="range"]::-ms-fill-lower {
 
 .w-full {
   width: 100%;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .min-w-0 {
@@ -1389,6 +1548,16 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
+}
+
+.bg-sky-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
+
 .bg-clip-padding {
   background-clip: padding-box;
 }
@@ -1411,6 +1580,10 @@ input[type="range"]::-ms-fill-lower {
 
 .p-2\.5 {
   padding: 0.625rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-3 {
@@ -1466,6 +1639,36 @@ input[type="range"]::-ms-fill-lower {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .pb-32 {
@@ -1548,6 +1751,10 @@ input[type="range"]::-ms-fill-lower {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1558,10 +1765,6 @@ input[type="range"]::-ms-fill-lower {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-extrabold {
-  font-weight: 800;
 }
 
 .uppercase {
@@ -1582,6 +1785,10 @@ input[type="range"]::-ms-fill-lower {
 
 .leading-relaxed {
   line-height: 1.625;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-\[\#001AFF\] {
@@ -2036,10 +2243,6 @@ body {
     display: grid;
   }
 
-  .sm\:max-w-xl {
-    max-width: 36rem;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2074,6 +2277,11 @@ body {
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .lg\:mb-0 {
@@ -2168,6 +2376,11 @@ body {
   .lg\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:pt-36 {
