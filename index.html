@@ -2,9 +2,9 @@
 <html lang=id class=scroll-smooth>
 
 <head>
-    <meta charset=UTF-8>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galih Azella Firdaus</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href=dist/img/favicon.png class="rounded-full" type=image/x-icon>
@@ -153,7 +153,6 @@
                     <div class="flex text-sm">
                         <div class="flex flex-wrap w-1/2 items-start justify-start">
                             <ul class="font-semibold">
-                                <li class="lg:text-lg text-left">Nama Lengkap</li>
                                 <li class="lg:text-lg text-left">Tanggal Lahir</li>
                                 <li class="lg:text-lg text-left">Pekerjaan</li>
                                 <li class="lg:text-lg text-left">Surel</li>
@@ -161,10 +160,11 @@
                         </div>
                         <div class="flex flex-wrap w-1/2 items-end justify-end">
                             <ul class="font-bold">
-                                <li class="lg:text-lg text-right">Galih Azella Firdaus</li>
                                 <li class="lg:text-lg text-right">6 Januari 2003</li>
                                 <li class="lg:text-lg text-right">Mahasiswa</li>
-                                <li class="lg:text-lg text-right">galihazellafirdaus@gmail.com</li>
+                                <li class="lg:text-lg text-right"><a
+                                        href="mailto:galihazellafirdaus@gmail.com?subject=Hi! I'm from your portfolio page 😊&body=Hai, aku mau order desain (....) dong, terimakasih">galihazellafirdaus@gmail.com</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -370,6 +370,17 @@
                 </div>
                 <div class="mx-auto max-w-full lg:grid lg:grid-cols-3 lg:gap-6 lg:mt-12">
                     <div
+                        class="bg-[#ff176b] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
+                        <a href=https://sweetology.vercel.app/ target=_blank>
+                            <h1 class="text-4xl mt-10 ml-7">🥞</h1>
+                        </a>
+                        <div class="text-l m-10 font-extrabold text-white">
+                            <h1 class="text-2xl">Sweetology<span class="block text-sm"">Mile Crepes Cake Store</span></h1>
+                            <p class=" text-xs font-medium mt-3">Landing page dari sebuah rumah produksi kue mile crepe
+                                    milik Alfira Nada Aulia Bachri</p>
+                        </div>
+                    </div>
+                    <div
                         class="bg-[#0F102B] dark:bg-[#00F0FF] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
                         <a href=https://github.com/aautoruns/pahe_app/ target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">🍿</h1>
@@ -382,7 +393,7 @@
                     </div>
                     <div
                         class="bg-[#F8F8F8] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://github.com/aautoruns/kopicalf/ target=_blank>
+                        <a href=https://aautoruns.github.io/kopicalf/ target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">☕</h1>
                         </a>
                         <div class="text-l m-10 font-extrabold">
@@ -395,7 +406,7 @@
                     </div>
                     <div
                         class="bg-[#000080] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://github.com/aautoruns/tugasakhir_webdesign/ target=_blank>
+                        <a href=https://aautoruns.github.io/tugasakhir_webdesign/ target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">🎒</h1>
                         </a>
                         <div class="text-l m-10 text-white">
@@ -459,60 +470,135 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="self-center px-4 rounded-xl w-full h-full lg:max-w-xl lg:mx-auto">
-                    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
-                        <h2 class="mb-5 text-2xl font-bold">Kotak Bantuan 🆘</h2>
-                        <div class="grid border-t border-charlie">
-                            <div class=pt-8>
-                                <h3 class="flex items-center text-lg font-bold mb-1">🙋‍♀️ Bagaimana cara mengorder
-                                    desain saya?</h3>
-                                <p class="text-normal text-justify">Banyak cara untuk mengkontak saya untuk melakukan
-                                    ordering desain. Cara pertama, anda bisa chat langsung saya lewat email pribadi,
-                                    WhatsApp, DM Instagram, dan juga lewat form bantuan dilaman ini. Atau cara kedua
-                                    yang cukup formal melalui platform freelance
-                                    <span class="font-bold"><a href=https://www.fiverr.com/galihazellaa>Fiverr</a>
-                                    </span>disana anda bisa
-                                    memesan desain yang anda inginkan. Untuk pengiriman pemesanan saya biasanya memakai
-                                    sharelink Google Drive.
-                                </p>
+                    <h1 class="font-bold text-2xl">Kotak Bantuan 🆘</h1>
+                    <div class="h-1 bg-red-500 rounded-full w-1/4 mb-5"></div>
+                    <div class="transition duration-200">
+                        <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="text-alpha bi bi-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                            </svg>
+                            <h2 class="font-semibold">🙋‍♀️ Bagaimana cara saya mengorder desain?</h2>
+                        </div>
+                        <div class="accordion-content pt-0 overflow-hidden max-h-0 space-y-4 mr-4 text-sm">
+                            <div class="flex flex-row ml-2">
+                                <div class="flex-1 bg-gray-100 dark:bg-slate-800 rounded-xl p-5">
+                                    <p class="text-justify">
+                                        Banyak cara untuk mengkontak saya untuk melakukan ordering desain saya. Cara
+                                        pertama, anda bisa chat langsung saya lewat email pribadi, WhatsApp, DM
+                                        Instagram, dan juga lewat form bantuan dilaman ini. Atau cara kedua yang cukup
+                                        formal melalui platform freelance
+                                        <span class="font-bold"><a href=https://www.fiverr.com/galihazellaa>Fiverr</a>
+                                        </span>disana anda bisa
+                                        memesan desain yang anda inginkan. Untuk pengiriman pemesanan saya biasanya
+                                        memakai sharelink Google Drive.
+                                    </p>
+                                </div>
                             </div>
-                            <div class=pt-8>
-                                <h3 class="flex items-center text-lg font-bold mb-1">🙋‍♀️ Pricelist dan metode
-                                    pembayaran.</h3>
-                                <p class="text-normal text-justify">Untuk harga tergantung rumitnya jadi tidak menentu.
-                                    Untuk dilayanan Fiverr saya mematok 5-15 Dollar per desain. Metode pembayaran bisa
-                                    melalui transfer bank, atau melalui dompet digital seperti Paypal, OVO, DANA,
-                                    Shopeepay, dan Gopay.
-                                </p>
+                        </div>
+                    </div>
+                    <div class="transition duration-200">
+                        <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="text-alpha bi bi-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                            </svg>
+                            <h2 class="700 font-semibold">🙋‍♀️ Pricelist dan metode pembayaran.</h2>
+                        </div>
+                        <div class="accordion-content pt-0 overflow-hidden max-h-0 space-y-4 mr-4 text-sm">
+                            <div class="flex flex-row ml-2">
+                                <div class="flex-1 bg-gray-100 dark:bg-slate-800 rounded-xl p-5">
+                                    <p class="text-justify">
+                                        Untuk harga tergantung rumitnya jadi tidak
+                                        menentu. Untuk dilayanan Fiverr saya mematok 5-15 Dollar per desain. Metode
+                                        pembayaran bisa melalui transfer bank, atau melalui dompet digital seperti
+                                        Paypal, OVO, DANA, Shopeepay, dan Gopay.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transition duration-200">
+                        <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="text-alpha bi bi-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                            </svg>
+                            <h2 class="700 font-semibold">🙋‍♀️ Spill UI-UX Design web ini dong!</h2>
+                        </div>
+                        <div class="accordion-content pt-0 overflow-hidden max-h-0 space-y-4 mr-4 text-sm">
+                            <div class="flex flex-row ml-2">
+                                <div class="flex-1 bg-gray-100 dark:bg-slate-800 rounded-xl p-5">
+                                    <p class="text-justify">Woke, first kalian harus punya akun Figma ya untuk mengakses
+                                        desainnya, kalau belum buat, silahkan buat akun dulu. Kalau udah ada silahkan
+                                        masuk link berikut
+                                    </p>
+                                    <span class="mt-1 font-bold"><a href="https://www.figma.com/file/sVb2WPlCXnA0lTghMJmWhP/Tailwind-Portfolio?node-id=0%3A1&t=mU1bVzEg5ntfZooQ-1"></a>Click Here!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transition duration-200">
+                        <div class="accordion-header cursor-pointer transition flex space-x-5 items-center h-16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="text-alpha bi bi-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                            </svg>
+                            <h2 class="700 font-semibold">🙋‍♀️ Quote of the day!</h2>
+                        </div>
+                        <div class="accordion-content pt-0 overflow-hidden max-h-0 space-y-4 mr-4 text-sm">
+                            <div class="flex flex-row ml-2">
+                                <div class="flex-1 bg-gray-100 dark:bg-slate-800 rounded-xl p-5">
+                                    <p class="text-justify">Untuk semua yang membaca thread ini, aku cuman mau ngasih
+                                        tau. Jangan kita menyerah dengan keadaan, keep training, and learn. Karena kalau
+                                        kita tidak pernah mencoba, kapan kita akan bisa? Itu penggalan lirik dari lagu
+                                        Fall in love alone dibawah.
+                                    </p>
+                                    <iframe class="rounded-xl mt-3 border-charlie"
+                                        src="https://open.spotify.com/embed/track/5xwBIieMMFUmLDgvG4DjFe?utm_source=generator"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="self-center px-4 rounded-xl w-full h-full lg:max-w-xl lg:mx-auto">
-                    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
-                        <h2 class="mb-5 text-2xl font-bold">Kotak Pesan 📩</h2>
-                        <form target=_blank action=https://formsubmit.co/galihazellafirdaus@gmail.com method=POST>
-                            <input name=name id=name
-                                class="bg-gray-50 dark:bg-slate-800 mb-3 border border-charlie dark:border-black/50 dark:placeholder-gray-400 dark:text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                                placeholder="Nama">
-                            <div class="flex mb-3">
-                                <span
-                                    class="inline-flex items-center px-3 text-sm bg-gray-50 dark:bg-slate-800 border border-r-0 border-gray-300 dark:border-black/50 rounded-l-md">@</span>
-                                <input type=email name=email id=email
-                                    class="rounded-none rounded-r-lg bg-gray-50 dark:bg-slate-800 border border-gray-300 dark:border-black/50 dark:placeholder-gray-400 dark:text-white text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5"
-                                    placeholder="Email">
+                    <div class="py-8 mx-auto max-w-screen-xl lg:px-6">
+                        <div class="self-center rounded-xl w-full h-full lg:max-w-xl lg:mx-auto">
+                            <div class="py-8 mx-auto max-w-screen-xl">
+                                <h2 class="text-2xl font-bold">Kotak Pesan 📩</h2>
+                                <div class="h-1 bg-red-500 rounded-full w-1/4 mb-5"></div>
+                                <form target=_blank action=https://formsubmit.co/galihazellafirdaus@gmail.com
+                                    method=POST>
+                                    <input name=name id=name
+                                        class="bg-gray-50 dark:bg-slate-800 mb-3 border border-charlie dark:border-black/50 dark:placeholder-gray-400 dark:text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                        placeholder="Nama">
+                                    <div class="flex mb-3">
+                                        <span
+                                            class="inline-flex items-center px-3 text-sm bg-gray-50 dark:bg-slate-800 border border-r-0 border-gray-300 dark:border-black/50 rounded-l-md">@</span>
+                                        <input type=email name=email id=email
+                                            class="rounded-none rounded-r-lg bg-gray-50 dark:bg-slate-800 border border-gray-300 dark:border-black/50 dark:placeholder-gray-400 dark:text-white text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5"
+                                            placeholder="Email">
+                                    </div>
+                                    <textarea id="message" rows="10"
+                                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-800 dark:border-black/50 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="Tulis Pesanmu Disini..."></textarea>
+                                    <button
+                                        class="flex justify-center items-center mt-5 w-full h-12 rounded-lg bg-alpha font-semibold text-white transition duration-75 shadow-lg hover:bg-red-800">Kirim
+                                        Pesan 📜
+                                    </button>
+                                </form>
                             </div>
-                            <textarea id="message" rows="10"
-                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-800 dark:border-black/50 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Tulis Pesanmu Disini..."></textarea>
-                            <button
-                                class="flex justify-center items-center mt-5 w-full h-12 rounded-lg bg-alpha font-semibold text-white transition duration-75 shadow-lg hover:bg-red-800">Kirim
-                                Pesan 📜
-                            </button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Akhir Kontak -->
 
