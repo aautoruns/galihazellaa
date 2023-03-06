@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
     <title>Galih Azella Firdaus</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href=dist/img/favicon.png class="rounded-full" type=image/x-icon>
@@ -30,7 +33,7 @@
     <header class="bg-transparent dark:bg-gray-900 absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
             <div class="flex items-center justify-between relative">
-                <div class=px-5><a href=/ class="block py-6 capitalize" id=greetings></a></div>
+                <div class=px-5><a href=/ class="block py-6 capitalize" aria-label="hello" id=greetings></a></div>
                 <div class="flex items-center px-5"><button id=hamburger name=hamburger type=button
                         class="block absolute right-4 lg:hidden"><span
                             class="hamburger-line dark:bg-white transition duration-300 ease-in-out origin-top-left"></span><span
@@ -55,12 +58,16 @@
                     <nav id=nav-menu
                         class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white dark:bg-slate-900 dark:backdrop-filter dark:backdrop-blur-2xl dark:bg-opacity-90 bg-clip-padding py-5 border border-slate-200 dark:border-slate-800 lg:border-none lg:border-slate-50 shadow lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
                         <ul class="block px-5 top lg:flex">
-                            <li><a href=#home class="block py-2 px-4 hover:font-bold">🛖 Beranda</a></li>
-                            <li><a href=#resume class="block py-2 px-4 hover:font-bold">✨ Mini Resume</a></li>
-                            <li><a href=#portofolio class="block py-2 px-4 hover:font-bold">📌 Portofolio</a></li>
+                            <li><a aria-label="ini-deskripsi" href=#home class="block py-2 px-4 hover:font-bold">🛖
+                                    Beranda</a></li>
+                            <li><a aria-label="ini-deskripsi" href=#resume class="block py-2 px-4 hover:font-bold">✨
+                                    Mini Resume</a></li>
+                            <li><a aria-label="ini-deskripsi" href=#portofolio
+                                    class="block py-2 px-4 hover:font-bold">📌 Portofolio</a></li>
                             <li
                                 class="bg-alpha rounded-md mt-3 text-white lg:text-black dark:text-white lg:bg-transparent lg:rounded-none lg:mt-0">
-                                <a href=#kontak class="block py-2 px-4 hover:font-bold">📞 Kontak</a>
+                                <a aria-label="ini-deskripsi" href=#kontak class="block py-2 px-4 hover:font-bold">📞
+                                    Kontak</a>
                             </li>
                         </ul>
                     </nav>
@@ -81,7 +88,7 @@
                     <h2 class=lg:text-lg>Saya seorang <span class="dark:text-white font-semibold" id=typed></span></h2>
                     <p class="mb-8 lg:text-lg">Selamat datang di <span class=font-bold>web portofolio </span>saya ✨
                     </p>
-                    <a href=#kontak
+                    <a aria-label="ini-deskripsi" href=#kontak
                         class="text-base font-semibold text-white bg-alpha py-3 px-5 rounded-lg hover:shadow-lg hover:bg-red-600 transition duration-300 ease-in-out">Butuh
                         bantuan? 🆘</a>
                 </div>
@@ -108,7 +115,7 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-5 mb-10 lg:w-1/3">
-                    <h4 class="font-bold mb-3 text-2xl text-center">Mini Resume 📄</h4>
+                    <div class="font-bold mb-3 text-2xl text-center">Mini Resume 📄</div>
                     <img src="dist/img/assets/fotoku 1.svg" width="200px" height="200px" alt=me
                         class="bg-charlie rounded-full mx-auto w-50 h-50 my-6">
                     <div class="font-bold mb-3 max-w-md leading-relaxed text-center">
@@ -135,7 +142,8 @@
                                                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                         </svg></a></div>
                                 <div class="bg-white shadow border border-charlie rounded-full mx-2">
-                                    <a href="https://glints.com/sg/profile/public/2418ba54-e02c-4878-9aba-a9c0510e32e3"
+                                    <a aria-label="ini-deskripsi"
+                                        href="https://glints.com/sg/profile/public/2418ba54-e02c-4878-9aba-a9c0510e32e3"
                                         target=_blank class="w-10 h-10 flex justify-center items-center">
                                         <div>
                                             <img src="dist/img/assets/glints.webp" class="m-auto w-5 h-5" alt="Glints">
@@ -167,12 +175,14 @@
                                 <li class="lg:text-lg text-right">6 Januari 2003</li>
                                 <li class="lg:text-lg text-right">Mahasiswa</li>
                                 <li class="lg:text-lg text-right">
-                                    <a href="mailto:galihazellafirdaus@gmail.com?subject=Hi! I'm from your portfolio page 😊&body=Hai, aku mau order desain (....) dong, terimakasih">galihazellafirdaus@gmail.com</a>
+                                    <a
+                                        href="mailto:galihazellafirdaus@gmail.com?subject=Hi! I'm from your portfolio page 😊&body=Hai, aku mau order desain (....) dong, terimakasih">galihazellafirdaus@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <hr class="w-full h-1 my-4 mb-5 bg-dark"><a href="https://bit.ly/galihazellafirdauscv" />
+                    <hr class="w-full h-1 my-4 mb-5 bg-dark"><a aria-label="ini-deskripsi"
+                        href="https://bit.ly/galihazellafirdauscv" />
                     <button
                         class="w-full border-[3px] border-dark dark:border-charlie dark:hover:border-red-800 h-12 text-center inline-flex items-center justify-center font-bold hover:bg-dark dark:hover:bg-alpha hover:text-white dark:hover:text-white shadow">Unduh
                         CV 📃</button></a>
@@ -182,21 +192,21 @@
                             <hr class="w-full h-1 mt-2 bg-dark">
                             <hr class="w-full h-1 bg-dark">
                             <h1 class="text-xl font-bold text-left mt-6">STMIK Widya Pratama Pekalongan🧑‍💻</h1>
-                            <h6 class="text-sm font-semibold text-left mb-5">Oktober 2021 - Sekarang</h6>
+                            <p class="text-sm font-semibold text-left mb-5">Oktober 2021 - Sekarang</p>
                             <p class="text-sm font-light text-left mb-5">Jl. Patriot No.25, Dukuh, Kec.
                                 Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51146.</p>
                             <hr class="w-full h-1 bg-beta">
                         </div>
                         <div class=sma>
                             <h1 class="text-xl font-bold text-left mt-6">SMAN 1 Kedungwuni 👨‍🎓</h1>
-                            <h6 class="text-sm font-semibold text-left mb-5">Juli 2018 - Juni 2021</h6>
+                            <p class="text-sm font-semibold text-left mb-5">Juli 2018 - Juni 2021</p>
                             <p class="text-sm font-light text-left mb-5">Sopaten, Kedungwuni Barat, Kec.
                                 Kedungwuni, Kabupaten Pekalongan, Jawa Tengah 51173.</p>
                             <hr class="w-full h-1 bg-beta">
                         </div>
                         <div class=sd>
                             <h1 class="text-xl font-bold text-left mt-6">SMPN 2 Kedungwuni 👨‍🎓</h1>
-                            <h6 class="text-sm font-semibold text-left mb-5">Juli 2016 - Juli 2018</h6>
+                            <p class="text-sm font-semibold text-left mb-5">Juli 2016 - Juli 2018</p>
                             <p class="text-sm font-light text-left mb-5">Jl. Bebekan, Kedungwuni Barat,
                                 Kec.
                                 Kedungwuni, Kab. Pekalongan, Jawa Tengah, dengan kode pos 51173.</p>
@@ -204,7 +214,7 @@
                         </div>
                         <div class="sd mb-5">
                             <h1 class="text-xl font-bold text-left mt-6">SDN 06 Kedungwuni 👨‍🎓</h1>
-                            <h6 class="text-sm font-semibold text-left mb-5">Juli 2009 - Juli 2016</h6>
+                            <p class="text-sm font-semibold text-left mb-5">Juli 2009 - Juli 2016</p>
                             <p class="text-sm font-light text-left mb-5">Gembong Timur, Kedungwuni Tim.,
                                 Kec.
                                 Kedungwuni, Kab. Pekalongan, Jawa Tengah 51173.</p>
@@ -217,8 +227,8 @@
                             <hr class="w-full h-1 mt-2 bg-dark">
                             <hr class="w-full h-1 bg-dark">
                             <h1 class="text-xl font-bold text-left mt-6">WPiTV 🎥</h1>
-                            <h6 class="text-sm font-semibold text-left">Anggota TV Club 10</h6>
-                            <h6 class="text-sm font-semibold text-left mb-5">September 2021 - Sekarang</h6>
+                            <p class="text-sm font-semibold text-left">Anggota TV Club 10</p>
+                            <p class="text-sm font-semibold text-left mb-5">September 2021 - Sekarang</p>
                             <ul class="list-disc list-inside text-sm font-light text-left mb-5">
                                 <li class="mb-1">Memproduksi salah satu episode Solusi Pintar, sebagai produser acara
                                 </li>
@@ -229,6 +239,7 @@
                             </ul>
                             <p class="text-sm font-light text-left mb-5"></p>
                         </div>
+
                         <div class="text-2xl font-bold">Hard Skill
                             <hr class="w-full h-1 mt-2 bg-dark">
                             <hr class="w-full h-1 bg-dark">
@@ -260,6 +271,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="text-2xl font-bold">Soft Skill
                         <hr class="w-full h-1 mt-2 bg-dark">
                         <hr class="w-full h-1 bg-dark">
@@ -292,7 +304,7 @@
                     <div class="text-2xl font-bold">Bahasa
                         <hr class="w-full h-1 mt-2 bg-dark">
                         <hr class="w-full h-1 bg-dark">
-                        <div class="softskill my-5">
+                        <div class="bahasa my-5">
                             <button type=button
                                 class="border border-dark dark:border-charlie font-semibold rounded-full text-sm px-4 py-1.5 text-center mb-2">Indonesia
                                 (Lancar)</button>
@@ -309,10 +321,11 @@
                 <div class="lkkp m-1 mt-5">
                     <h1 class="text-xl font-bold text-left mt-6"><span class=font-medium>Magang - </span>Lingkar
                         Kajian Kota Pekalongan 🦅</h1>
-                    <h6 class="text-sm font-normal text-left mb-2">November 2022 - Desember 2023</h6>
+                    <div class="text-sm font-normal text-left mb-2">November 2022 - Desember 2023</div>
                     <ul class="list-disc list-inside text-sm font-light text-left mb-2">
                         <li class="mb-1">Mendesain postingan Instagram, jadwal acara, dan background virtual meeting,
-                            event <a href="https://www.instagram.com/p/CmyNRQmLCCX/" class="font-bold">Junior Researcher
+                            event <a aria-label="ini-deskripsi" href="https://www.instagram.com/p/CmyNRQmLCCX/"
+                                class="font-bold">Junior Researcher
                                 Academy 2023.</a></li>
                         <li class="mb-1">Menjadi panitia bagian IT dan dokumentasi acara webinar offline, Empowering
                             Youth For an Inclusive and Sustainable Development.</li>
@@ -322,7 +335,7 @@
                 <div class="expo-kampus m-1 mt-5">
                     <h1 class="text-xl font-bold text-left mt-6"><span class=font-medium>Part Time - </span>Expo
                         Kampus SMANDUNG 2022 🎡</h1>
-                    <h6 class="text-sm font-normal text-left mb-2">Desember 2021</h6>
+                    <div class="text-sm font-normal text-left mb-2">Desember 2021</div>
                     <ul class="list-disc list-inside text-sm font-light text-left mb-2">
                         <li class="mb-1">Mendesain logo Expo Kampus 2022.</li>
                         <li class="mb-1">Mendesain header dan footer surat-surat dan dokumen.</li>
@@ -332,7 +345,7 @@
                 <div class="expo-kampus m-1 mt-5">
                     <h1 class="text-xl font-bold text-left mt-6"><span class=font-medium>Part Time - </span>SMANDUNG
                         2021 Yearbook 📕</h1>
-                    <h6 class="text-sm font-normal text-left mb-2">September 2020</h6>
+                    <div class="text-sm font-normal text-left mb-2">September 2020</div>
                     <ul class="list-disc list-inside text-sm font-light text-left mb-2">
                         <li class="mb-1">Mendesain logo untuk cover buku tahunan sekolah.</li>
                         <li class="mb-1">Menjadi panitia inti bagian dekorasi dan dokumentasi.</li>
@@ -350,11 +363,11 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-5 lg:w-full text-center">
-                    <h4 class="font-bold text-2xl lg:text-5xl leading-6">Portfolio <span
+                    <div class="font-bold text-2xl lg:text-5xl leading-6">Portfolio <span
                             class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-alpha relative inline-block">
                             <span class="relative font-medium text-white">Section</span>
                         </span>
-                    </h4>
+                    </div>
                     <div class="inline-flex items-center justify-center w-full">
                         <hr class="w-64 h-1 my-8 bg-beta border-0 rounded">
                         <div class="absolute px-4 -translate-x-1/2 bg-white dark:bg-gray-900 left-1/2"><svg
@@ -365,12 +378,12 @@
                                     fill=currentColor />
                             </svg></div>
                     </div>
-                    <h3 class="font-bold text-l text-center mb-5">💡 Klik emoji untuk melihat projek.</h3>
+                    <div class="font-bold text-l text-center mb-5">💡 Klik emoji untuk melihat projek.</div>
                 </div>
-                <div class="mx-auto max-w-full lg:grid lg:grid-cols-3 lg:gap-6 lg:mt-12">
+                <div class="mx-auto max-w-full grid lg:grid-cols-3 lg:gap-6 lg:mt-12">
                     <div
-                        class="bg-[#ff176b] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://sweetology.vercel.app/ target=_blank>
+                        class="bg-pink-700 shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
+                        <a aria-label="ini-deskripsi" href=https://sweetology.vercel.app/ target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">🥞</h1>
                         </a>
                         <div class="text-l m-10 font-extrabold text-white">
@@ -381,7 +394,7 @@
                     </div>
                     <div
                         class="bg-[#0F102B] dark:bg-[#00F0FF] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://github.com/aautoruns/pahe_app/ target=_blank>
+                        <a aria-label="ini-deskripsi" href=https://github.com/aautoruns/pahe_app/ target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">🍿</h1>
                         </a>
                         <div class="text-l m-10 font-extrabold text-[#00F0FF] dark:text-[#0F102B]">
@@ -392,7 +405,7 @@
                     </div>
                     <div
                         class="bg-[#F8F8F8] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://aautoruns.github.io/kopicalf/ target=_blank>
+                        <a aria-label="ini-deskripsi" href=https://aautoruns.github.io/kopicalf/ target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">☕</h1>
                         </a>
                         <div class="text-l m-10 font-extrabold">
@@ -405,7 +418,8 @@
                     </div>
                     <div
                         class="bg-[#000080] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://aautoruns.github.io/tugasakhir_webdesign/ target=_blank>
+                        <a aria-label="ini-deskripsi" href=https://aautoruns.github.io/tugasakhir_webdesign/
+                            target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">🎒</h1>
                         </a>
                         <div class="text-l m-10 text-white">
@@ -416,7 +430,7 @@
                     </div>
                     <div
                         class="bg-[#BC0909] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://github.com/aautoruns/anfstudio_crud target=_blank>
+                        <a aria-label="ini-deskripsi" href=https://github.com/aautoruns/anfstudio_crud target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">👕</h1>
                         </a>
                         <div class="text-l m-10 text-white">
@@ -427,7 +441,7 @@
                     </div>
                     <div
                         class="bg-[#FEA800] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://www.instagram.com/p/ChALOGZvuFk/ target=_blank>
+                        <a aria-label="ini-deskripsi" href=https://www.instagram.com/p/ChALOGZvuFk/ target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">🖼️</h1>
                         </a>
                         <div class="text-l m-10 text-dark">
@@ -438,7 +452,8 @@
                     </div>
                     <div
                         class="bg-[#000080] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://dribbble.com/shots/20037207-SMANDUNG-Official-Website-Re-Design target=_blank>
+                        <a aria-label="ini-deskripsi"
+                            href=https://dribbble.com/shots/20037207-SMANDUNG-Official-Website-Re-Design target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">🦅</h1>
                         </a>
                         <div class="text-l m-10 text-white">
@@ -449,7 +464,8 @@
                     </div>
                     <div
                         class="bg-[#FEA800] shadow-lg rounded-xl flex flex-wrap justify-start items-center w-72 h-72 mb-8 lg:mb-0">
-                        <a href=https://www.instagram.com/stories/highlights/17897984605819174/ target=_blank>
+                        <a aria-label="ini-deskripsi"
+                            href=https://www.instagram.com/stories/highlights/17897984605819174/ target=_blank>
                             <h1 class="text-4xl mt-10 ml-7">🖋️</h1>
                         </a>
                         <div class="text-l m-10 text-dark">
@@ -487,7 +503,8 @@
                                         Banyak cara untuk melakukan ordering desain saya. Cara pertama, kamu bisa chat
                                         langsung saya lewat email pribadi, WhatsApp, DM Instagram, dan juga lewat form
                                         bantuan dilaman ini. Atau cara kedua melalui platform freelance <span
-                                            class="font-bold"><a href=https://www.fiverr.com/galihazellaa>Fiverr</a>
+                                            class="font-bold"><a aria-label="ini-deskripsi"
+                                                href=https://www.fiverr.com/galihazellaa>Fiverr</a>
                                         </span>, disana kamu bisa memesan desain yang kamu inginkan dengan legal dan
                                         beralur. Untuk pengiriman desain, saya biasanya
                                         memakai Google Drive.
@@ -560,11 +577,13 @@
                                         kita tidak pernah mencoba, kapan kita akan bisa? Itu penggalan lirik dari lagu
                                         Fall in love alone dibawah.
                                     </p>
-                                    <iframe class="rounded-xl mt-3 border-charlie"
+                                    <iframe title="Spotify" class="rounded-xl mt-3 border-charlie"
                                         src="https://open.spotify.com/embed/track/5xwBIieMMFUmLDgvG4DjFe?utm_source=generator"
                                         width="100%" height="152" frameBorder="0" allowfullscreen=""
                                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                        loading="lazy"></iframe>
+                                        loading="lazy">
+
+                                    </iframe>
                                 </div>
                             </div>
                         </div>
@@ -607,9 +626,9 @@
     <!-- Footer -->
     <footer class="bg-gray-200 dark:bg-[#080E16] shadow px-6 py-8">
         <div class="w-full mb-5">
-            <h5 class="font-bold text-sm text-center mb-4">Ikuti juga semua platform media sosial saya.</h5>
+            <p class="font-bold text-sm text-center mb-4">Ikuti juga semua platform media sosial saya.</p>
             <div class="flex justify-center">
-                <a href=https://www.behance.net/galihazellaa/ target=_blank>
+                <a aria-label="ini-deskripsi" href=https://www.behance.net/galihazellaa/ target=_blank>
                     <div class="flex items-center">
                         <div
                             class="w-11 h-11 bg-beta dark:bg-slate-800 hover:bg-[#1769FF] dark:hover:bg-[#1769FF] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
@@ -622,7 +641,7 @@
                         </div>
                     </div>
                 </a>
-                <a href=https://dribbble.com/autouruns target=_blank>
+                <a aria-label="ini-deskripsi" href=https://dribbble.com/autouruns target=_blank>
                     <div class="flex items-center">
                         <div
                             class="w-11 h-11 bg-beta dark:bg-slate-800 hover:bg-[#EA4C89] dark:hover:bg-[#EA4C89] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
@@ -635,7 +654,7 @@
                         </div>
                     </div>
                 </a>
-                <a href=https://github.com/aautoruns target=_blank>
+                <a aria-label="ini-deskripsi" href=https://github.com/aautoruns target=_blank>
                     <div class="flex items-center">
                         <div
                             class="w-11 h-11 bg-beta dark:bg-slate-800 hover:bg-[#181717] dark:hover:bg-[#181717] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
@@ -648,7 +667,7 @@
                         </div>
                     </div>
                 </a>
-                <a href=https://instagram.com/aautoruns target=_blank>
+                <a aria-label="ini-deskripsi" href=https://instagram.com/aautoruns target=_blank>
                     <div class="flex items-center">
                         <div
                             class="w-11 h-11 bg-beta dark:bg-slate-800 hover:bg-[#302683] dark:hover:bg-[#302683] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
@@ -661,7 +680,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://open.spotify.com/user/o3f5ldym4o8xxjg4wa284iz3q?si=9Yi8wXXjTeCN-M-Jqobb0g&utm_source=copy-link"
+                <a aria-label="ini-deskripsi"
+                    href="https://open.spotify.com/user/o3f5ldym4o8xxjg4wa284iz3q?si=9Yi8wXXjTeCN-M-Jqobb0g&utm_source=copy-link"
                     target=_blank>
                     <div class="flex items-center">
                         <div
@@ -675,7 +695,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="http://tiktok.com/@andrew_garfeild" target=_blank>
+                <a aria-label="ini-deskripsi" href="http://tiktok.com/@andrew_garfeild" target=_blank>
                     <div class="flex items-center">
                         <div
                             class="w-11 h-11 bg-beta dark:bg-slate-800 hover:bg-[#252525] dark:hover:bg-[#000000] rounded-xl grayscale hover:grayscale-0 mr-3 transition duration-200 ease-in-out">
@@ -690,12 +710,13 @@
                 </a>
             </div>
         </div>
-        <h5 class="font-bold text-sm text-center">&copy; Copyright <span id=year></span>
-            <a href=http://galihazellaa.vercel.app/ class=hover:underline> Galih Azella Firdaus</a>. All Rights
+        <div class="font-bold text-sm text-center">&copy; Copyright <span id=year></span>
+            <a aria-label="ini-deskripsi" href=http://galihazellaa.vercel.app/ class=hover:underline> Galih Azella
+                Firdaus</a>. All Rights
             Reserved.
-        </h5>
-        <p class="flex justify-center font-normal text-sm text-center"><a href=https://tailwindcss.com>Made with <span
-                    class=font-bold>Tailwind CSS</span>
+        </div>
+        <p class="flex justify-center font-normal text-sm text-center"><a aria-label="ini-deskripsi"
+                href=https://tailwindcss.com>Made with <span class=font-bold>Tailwind CSS</span>
             </a>
             <span>
                 <svg role=img viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg class="fill-sky-400 w-5 h-5 mx-2">
@@ -709,15 +730,14 @@
     <!-- Akhir Footer -->
 
     <!-- Back to Top -->
-    <a href=#home id=to-top
+    <a aria-label="ini-deskripsi" href=#home id=to-top
         class="hidden fixed bottom-5 right-5 rounded-xl grayscale hover:grayscale-0 bg-charlie hover:bg-white shadow-lg p-2 uppercase leading-normal transition duration-150 ease-in-out hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white active:shadow-lg"><img
             src="dist/img/assets/totop.webp" width="30px" height="30px" alt=back-to-top class="mx-auto">
     </a>
     <!-- End Back to Top -->
 
     <!-- JS -->
-    <script src=dist/js/script.js></script>
-    <script src=node_modules/flowbite/plugin.js></script>
+    <script type="text/javascript" src=dist/js/script.js></script>
 
 </body>
 
