@@ -39,7 +39,23 @@ as in the traditional approach.
 
 ## Page Speed Test 💨
 
-![image](https://user-images.githubusercontent.com/96577430/222647870-67c0fa38-68e1-4d14-bb27-fe3f4c0decd3.png)
+<details>
+<summary>
+Desktop Best Practice 🖥️
+</summary>
+
+![image](https://user-images.githubusercontent.com/96577430/223037995-ea0a965f-d283-41d7-bcd2-8f90131c6c72.png)
+
+</details>
+
+<details>
+<summary>
+Mobile Best Practice 📱
+</summary>
+
+![image](https://user-images.githubusercontent.com/96577430/223038209-d23fa113-ccff-4768-a226-3d2c5831d13c.png)
+
+</details>
 
 ## Technologies used in the project 💻
 
