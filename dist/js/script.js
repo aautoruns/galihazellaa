@@ -11,7 +11,7 @@ document.getElementById('greetings').innerHTML = '<b>' + greet + '</b>';
 
 // Typed
 new Typed('#typed', {
-  strings: ['A', 'Mahasiswa🎓', 'Art Freelancer🪙', 'Junior Frontend Developer💻', 'Junior Web Designer🤹', 'Junior UI Designer🎨'],
+  strings: ['Mahasiswa🎓', 'Art Freelancer🪙', 'Junior Frontend Developer💻', 'Junior Web Designer🤹', 'Junior UI Designer🎨'],
   typeSpeed: 70,
   delaySpeed: 50,
   loop: true,
