@@ -44,7 +44,7 @@ as in the traditional approach.
 Desktop Best Practice 🖥️
 </summary>
 
-![image](https://user-images.githubusercontent.com/96577430/223037995-ea0a965f-d283-41d7-bcd2-8f90131c6c72.png)
+![image](https://user-images.githubusercontent.com/96577430/224525490-fc464771-6601-44db-9bdf-414a7b0a41db.png)
 
 </details>
 
@@ -53,7 +53,7 @@ Desktop Best Practice 🖥️
 Mobile Best Practice 📱
 </summary>
 
-![image](https://user-images.githubusercontent.com/96577430/223038209-d23fa113-ccff-4768-a226-3d2c5831d13c.png)
+![image](https://user-images.githubusercontent.com/96577430/224525466-403884f0-7763-4c9c-9c78-97f88b5ccd6d.png)
 
 </details>
 
