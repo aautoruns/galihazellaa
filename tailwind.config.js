@@ -21,6 +21,9 @@ module.exports = {
         xl: '1440px',
         '2xl': '1320px',
       },
+      fontSize: {
+        xxs: '1px',
+      },
     },
   },
   plugins: [require('flowbite/plugin')],
