@@ -4,7 +4,7 @@ var hrs = myDate.getHours();
 var greet;
 
 if (hrs < 11) greet = 'Selamat pagi 🌄';
-else if (hrs >= 11 && hrs <= 14) greet = 'Selamat siang ☀️';
+else if (hrs >= 11 && hrs <= 14) greet = 'Selamat siang 🌞';
 else if (hrs >= 15 && hrs <= 17) greet = 'Selamat sore 🌅';
 else if (hrs >= 18 && hrs <= 24) greet = 'Selamat malam 🌛';
 document.getElementById('greetings').innerHTML = '<b>' + greet + '</b>';
