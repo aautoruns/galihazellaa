@@ -4,15 +4,15 @@ var hrs = myDate.getHours();
 var greet;
 
 if (hrs < 11) greet = 'Selamat pagi 🌄';
-else if (hrs >= 11 && hrs <= 14) greet = 'Selamat siang 🌞';
-else if (hrs >= 15 && hrs <= 17) greet = 'Selamat sore 🌅';
-else if (hrs >= 18 && hrs <= 24) greet = 'Selamat malam 🌛';
+else if (hrs >= 11 && hrs <= 14) greet = 'Selamat siang ☀️';
+else if (hrs >= 15 && hrs <= 17) greet = 'Selamat sore 🌇';
+else if (hrs >= 18 && hrs <= 24) greet = 'Selamat malam 🌙';
 document.getElementById('greetings').innerHTML = '<b>' + greet + '</b>';
 
 // Typed
 new Typed('#typed', {
-  strings: ['Mahasiswa🎓', 'Art Freelancer🪙', 'Junior Frontend Developer💻', 'Junior Web Designer🤹', 'Junior UI Designer🎨'],
-  typeSpeed: 70,
+  strings: ['Mahasiswa 🎓', 'Art Freelancer 🪙', 'Junior Frontend Developer 💻', 'Junior Web Designer 🤹', 'Junior UI-UX Designer 🎨'],
+  typeSpeed: 50,
   delaySpeed: 50,
   loop: true,
 });
