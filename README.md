@@ -1,7 +1,5 @@
 # Galih Azella Firdaus Portfolio
 
-<img src="https://user-images.githubusercontent.com/96577430/225972378-d1c0a66c-19bd-406e-919f-1c46f5d209d7.gif" width="200px" alt="me">
-
 ![Codacy
 Badge](https://img.shields.io/codacy/grade/261e788060044de3b7ac80ce9bffec31?color=1a73e8&logo=codacy&style=for-the-badge)
 ![Top Language

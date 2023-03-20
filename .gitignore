@@ -1,9 +1,1 @@
 node_modules/
-
-.htaccess
-
-package.json
-package-lock.json
-
-dist/pdf/*
-!dist/pdf/Galih Azella Firdaus - Informatics Engineering Student - Resume.pdf
