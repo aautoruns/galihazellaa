@@ -4,15 +4,21 @@ var hrs = myDate.getHours();
 var greet;
 
 if (hrs < 11) greet = 'Selamat pagi 🌄';
-else if (hrs >= 11 && hrs <= 14) greet = 'Selamat siang ☀️';
+else if (hrs >= 11 && hrs <= 14) greet = 'Selamat siang 🌞';
 else if (hrs >= 15 && hrs <= 17) greet = 'Selamat sore 🌇';
 else if (hrs >= 18 && hrs <= 24) greet = 'Selamat malam 🌙';
 document.getElementById('greetings').innerHTML = '<b>' + greet + '</b>';
 
 // Typed
 new Typed('#typed', {
-  strings: ['Mahasiswa 🎓', 'Art Freelancer 🪙', 'Junior Frontend Developer 💻', 'Junior Web Designer 🤹', 'Junior UI-UX Designer 🎨'],
+  strings: ['Mahasiswa 🎓', 'Art Freelancer 🪙', 'Junior Frontend Developer 💻', 'Junior Web Designer 💥', 'Junior UI-UX Designer 🎨'],
   typeSpeed: 50,
+  delaySpeed: 50,
+  loop: true,
+});
+new Typed('#bachelor', {
+  strings: ['Mahasiswa Teknik Informatika 💻', 'Bachelor of Informatics Engineering 💻'],
+  typeSpeed: 90,
   delaySpeed: 50,
   loop: true,
 });
@@ -57,7 +63,6 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
 var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-// Change the icons inside the button based on previous settings
 if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
   themeToggleLightIcon.classList.remove('hidden');
 } else {
@@ -67,11 +72,9 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
 var themeToggleBtn = document.getElementById('theme-toggle');
 
 themeToggleBtn.addEventListener('click', function () {
-  // toggle icons inside button
   themeToggleDarkIcon.classList.toggle('hidden');
   themeToggleLightIcon.classList.toggle('hidden');
 
-  // if set via local storage previously
   if (localStorage.getItem('color-theme')) {
     if (localStorage.getItem('color-theme') === 'light') {
       document.documentElement.classList.add('dark');
@@ -81,7 +84,6 @@ themeToggleBtn.addEventListener('click', function () {
       localStorage.setItem('color-theme', 'light');
     }
 
-    // if NOT set via local storage previously
   } else {
     if (document.documentElement.classList.contains('dark')) {
       document.documentElement.classList.remove('dark');
@@ -110,4 +112,39 @@ accordionHeader.forEach((header) => {
       header.querySelector('.fas').classList.remove('fa-minus');
     }
   });
+});
+
+// Portfolio Filter
+window.addEventListener('DOMContentLoaded', function () {
+  const filtered = document.querySelectorAll('.group a');
+  const buttons = document.querySelectorAll('.filter-button');
+  const toggleContent = () => {
+    let filterSelector = [...buttons] // the buttons
+      .filter((btn) => btn.matches('.inactive')) // that are grey
+      .map((btn) => btn.dataset.filter); // get their data-filter
+    console.log(filterSelector);
+
+    filtered.forEach((anc) => {
+      // Hide the links whose classes are are in the filterSelector
+      const hide = filterSelector.length > 0 && filterSelector.some((filter) => [...anc.classList].includes(filter));
+      anc.style.display = hide ? 'none' : 'inline-block';
+    });
+  };
+  const filter = (e) => {
+    const tgt = e.target; // what was clicked?
+    if (tgt.matches('.filter-button')) {
+      // a button?
+      tgt.classList.toggle('inactive'); // toggle it
+      toggleContent(); // toggle the links
+    } else if (tgt.closest('.toggleall')) {
+      // or if (!tgt.matches("toggleButton")) return if you give the buttons a class
+      const show = tgt.matches('.toggleall-show'); // show all?
+      const hide = tgt.matches('.toggleall-hide'); // hide all?
+      if (!show && !hide) return; // something else was clicked
+      buttons.forEach((btn) => btn.classList[show ? 'remove' : 'add']('inactive')); // if show, remove all inactive if not, addd all inacctive
+      toggleContent(); // toggle the links
+    }
+  };
+
+  document.addEventListener('click', filter);
 });

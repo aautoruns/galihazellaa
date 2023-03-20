@@ -1,5 +1,7 @@
 # Galih Azella Firdaus Portfolio
 
+<img src="https://user-images.githubusercontent.com/96577430/225972378-d1c0a66c-19bd-406e-919f-1c46f5d209d7.gif" width="200px" alt="me">
+
 ![Codacy
 Badge](https://img.shields.io/codacy/grade/261e788060044de3b7ac80ce9bffec31?color=1a73e8&logo=codacy&style=for-the-badge)
 ![Top Language
@@ -93,8 +95,10 @@ After that, install all Node package for this project
     # Install Flowbites Module
     $ npm i flowbite
 ```
-    
+
 ## Preview 👁️
 
+<div align="center">
 Then in your text editor click `Run` to see the portfolio locally. It should look like the below screenshot.
-<img src="https://user-images.githubusercontent.com/96577430/222501935-f95ec3b6-9e27-464b-b5a1-13fd2a559811.gif" width="70%" alt="portfolio_demo">
+<img src="https://user-images.githubusercontent.com/96577430/222501935-f95ec3b6-9e27-464b-b5a1-13fd2a559811.gif" width="80%" alt="portfolio_demo">
+</div>
