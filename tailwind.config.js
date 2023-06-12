@@ -14,6 +14,7 @@ module.exports = {
         charlie: '#d1d5db',
         dark: '#010101',
         shopee: '#F0592C',
+        linktree: '#BD0036',
       },
       screens: {
         sm: '480px',
