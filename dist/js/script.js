@@ -11,13 +11,13 @@ document.getElementById('greetings').innerHTML = '<b>' + greet + '</b>';
 
 // Typed
 new Typed('#typed', {
-  strings: ['Mahasiswa 🎓', 'Art Freelancer 🪙', 'Junior Frontend Developer 💻', 'Junior Web Designer 💥', 'Junior UI-UX Designer 🎨'],
-  typeSpeed: 50,
-  delaySpeed: 50,
+  strings: ['Mahasiswa 🎓', 'Freelancer 🪙', 'Graphic Designer 💥', 'Junior Web Designer 🎨'],
+  typeSpeed: 100,
+  delaySpeed: 100,
   loop: true,
 });
 new Typed('#bachelor', {
-  strings: ['Mahasiswa Teknik Informatika 💻', 'Bachelor of Informatics Engineering 💻'],
+  strings: ['Mahasiswa Teknik Informatika 💻', 'Informatics Engineering Student 💻'],
   typeSpeed: 90,
   delaySpeed: 50,
   loop: true,
@@ -83,7 +83,6 @@ themeToggleBtn.addEventListener('click', function () {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('color-theme', 'light');
     }
-
   } else {
     if (document.documentElement.classList.contains('dark')) {
       document.documentElement.classList.remove('dark');
