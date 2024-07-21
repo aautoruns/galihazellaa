@@ -11,9 +11,9 @@ document.getElementById('greetings').innerHTML = '<b>' + greet + '</b>';
 
 // Typed
 new Typed('#typed', {
-  strings: ['Mahasiswa 🎓', 'Freelancer 🪙', 'Graphic Designer 💥', 'Junior Web Designer 🎨'],
+  strings: ['Mahasiswa 🎓', 'Video Editor 📽️', 'Graphic Designer 💥', 'Web Designer 🎨'],
   typeSpeed: 100,
-  delaySpeed: 100,
+  delaySpeed: 200,
   loop: true,
 });
 new Typed('#bachelor', {
